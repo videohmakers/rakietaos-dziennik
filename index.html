@@ -20,9 +20,9 @@
    formAction: adres wysyłki formularza z MailerLite (albo później z Easytools).
    privacyUrl: link do polityki prywatności. */
 window.RAKIETAOS_CONFIG = {
-  formAction: "",
+  formAction: "https://assets.mailerlite.com/jsonp/621256/forms/202934075044922769/subscribe",
   privacyUrl: "",
-  successText: "Jesteś na liście. Sprawdź skrzynkę i potwierdź zapis."
+  successText: "Jesteś na liście. Dam Ci znać jako pierwszej."
 };
 </script>
 <style>
@@ -484,7 +484,7 @@ a { color: var(--kobalt-ciemny); }
       btn.disabled = false;
       form.classList.add("done");
       msg.className = "wl-msg ok";
-      msg.textContent = cfg.successText || "Jesteś na liście. Sprawdź skrzynkę i potwierdź zapis.";
+      msg.textContent = cfg.successText || "Jesteś na liście. Dam Ci znać jako pierwszej.";
     });
     form.addEventListener("submit", function (ev) {
       var email = form.querySelector('input[type="email"]');
