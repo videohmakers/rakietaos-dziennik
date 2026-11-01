@@ -1,0 +1,228 @@
+{
+ "updated": "2026-11-01T11:08:06+00:00",
+ "days": {
+  "2026-10-31": {
+   "date": "2026-10-31",
+   "dayNo": 1,
+   "title": "Wróciłam z manicure, a rolka była gotowa",
+   "lead": "Nagrywam 10 minut, piszę krótki brief i wychodzę. Kiedy wracam, czeka na mnie gotowa rolka z napisami.",
+   "story": [
+    {
+     "text": "Nagrywam rolkę gadaną. 10 minut.",
+     "time": ""
+    },
+    {
+     "text": "Piszę brief do montażu. 5 minut.",
+     "time": ""
+    },
+    {
+     "text": "Wychodzę na manicure. W tym czasie rakietaOS montuje rolkę, około 30 minut.",
+     "time": ""
+    },
+    {
+     "text": "Wracam i mam gotowca do publikacji. Kiedyś na prostszą rolkę traciłam pół godziny przy komputerze.",
+     "time": ""
+    }
+   ],
+   "idea": {
+    "format": "Rolka gadana",
+    "hook": "Byłam na manicure, a w tym czasie zmontowała się moja rolka.",
+    "script": [
+     "Pokaż dłonie po manicure i telefon z gotową rolką.",
+     "Powiedz, ile czasu zajęło Ci nagranie i brief: 15 minut.",
+     "Pokaż, ile kiedyś siedziałaś nad prostszą rolką: pół godziny.",
+     "Zakończ pytaniem: na co Ty wydałabyś te pół godziny?"
+    ]
+   }
+  },
+  "2026-11-01": {
+   "date": "2026-11-01",
+   "dayNo": 2,
+   "title": "Od trzech rolek do własnej marki",
+   "lead": "Rano jedno zdanie i trzy wersje rolki. Potem architektura całego systemu, nazwa rakietaOS i sześć rund projektowania marki, które zamiast tygodni z grafikiem zajęły mniej niż godzinę.",
+   "story": [
+    {
+     "text": "Jedna prośba do rakietaOS: trzy nowe wersje wczorajszej rolki. Zajmuje mi to 30 sekund.",
+     "time": ""
+    },
+    {
+     "text": "Piję kawę i idę na spacer z psami. Po 40 minutach mam trzy różne wersje, które mogę puścić jako trial reels bez strachu o blokadę.",
+     "time": ""
+    },
+    {
+     "text": "Siadamy do planowania mojego OS: co ma robić, w jakiej kolejności i jak ułożyć menu, żeby nie zrobił się bałagan.",
+     "time": "9:11"
+    },
+    {
+     "text": "rakietaOS buduje ten dziennik i automat, który co wieczór o 21:00 będzie go uzupełniał.",
+     "time": "9:57"
+    },
+    {
+     "text": "Mój system ma nazwę: rakietaOS. Zapis jak macOS. Konto na Instagramie jest wolne, rezerwuję je.",
+     "time": "10:26"
+    },
+    {
+     "text": "Zaczynamy projektować markę rakietaOS. Sześć rund w 48 minut, etapy niżej.",
+     "time": "10:31"
+    },
+    {
+     "text": "Akceptuję. Cieszę się jak dziecko. rakietaOS zapisuje system marki i przebiera ten dziennik w nowe barwy.",
+     "time": "11:19"
+    }
+   ],
+   "turbulence": {
+    "text": "Chciałam jeden projekt Content z podfolderami na rolki, karuzele i teksty. Okazuje się, że projekty w Claude nie mają podfolderów. Rozwiązanie: prefiksy w nazwach, np. Content · Rolki. W menu wygląda to prawie jak folder.",
+    "title": "Podfoldery, których nie ma"
+   },
+   "idea": {
+    "format": "Karuzela",
+    "hook": "Sześć rund projektu marki w 48 minut. Grafik potrzebowałby tygodni.",
+    "script": [
+     "Slajd 1: okładka z logotypem rakietaOS i liczbą 48 min w różowej pigułce.",
+     "Slajdy 2–7: po jednym slajdzie na rundę, co odrzuciłam i dlaczego.",
+     "Slajd 8: odkrycie kobaltu i zdjęcie w kobaltowej bluzie.",
+     "Slajd 9: gotowa marka obok Bizneswoman w trampkach.",
+     "Slajd 10: CTA, napisz MARKA, jeśli chcesz zobaczyć całą tablicę."
+    ]
+   },
+   "stagesTitle": "Jak powstała marka rakietaOS",
+   "stages": [
+    {
+     "alt": "Runda 1: kierunki Kokpit, Start i Plan lotu",
+     "image": "etapy/runda1.jpg",
+     "label": "10:31 · Runda 1",
+     "text": "Kokpit, Start i Plan lotu. Kokpit odpada od razu: ciemny i pomarańczowy. Ze Startu podoba mi się energia i krój, z Planu lotu kratka i róż jako łącznik z Bizneswoman w trampkach.",
+     "title": "Trzy kierunki"
+    },
+    {
+     "alt": "Runda 2: Start w barwach rodziny, Plan lotu z nowym krojem, Odliczanie",
+     "image": "etapy/runda2.jpg",
+     "label": "10:40 · Runda 2",
+     "text": "Start w barwach rodziny wygrywa. Plan lotu z nowym krojem dalej przypomina mi Poppinsa, a nowe Odliczanie ma za ciemne tło.",
+     "title": "Róż zamiast pomarańczu"
+    },
+    {
+     "alt": "Runda 3: Plan lotu z Antonem oraz wersje w kolorach pomarańczu i wrzosu",
+     "image": "etapy/runda3.jpg",
+     "label": "10:46 · Runda 3",
+     "text": "Plan lotu z Antonem staje się faworytem. Z wersji w typografii BWT biorę jedno: OS w pigułce, bo pigułki to mój znak z rolek i karuzel.",
+     "title": "Anton i pigułka"
+    },
+    {
+     "alt": "Runda 4: Plan lotu z pigułką, Odliczanie na różu i na kobalcie",
+     "image": "etapy/runda4.jpg",
+     "label": "10:51 · Runda 4",
+     "text": "Jedna z wersji ma kobaltowe tło i nagle wszystko klika. To kolor mojej bluzy, w której nagrywam rolki.",
+     "title": "Odkrycie kobaltu"
+    },
+    {
+     "alt": "Runda 5: Plan misji, Okno systemu i Orbita w kobalcie",
+     "image": "etapy/runda5.jpg",
+     "label": "10:55 · Runda 5",
+     "text": "Kobalt jako główny, róż tylko jako akcent, biel i granat. Plan misji, Okno systemu i Orbita. Okno systemu i Orbita to oba sztos.",
+     "title": "Trzy projekty w jednej palecie"
+    },
+    {
+     "alt": "Runda 6: finalny kierunek Okno systemu + Orbita",
+     "image": "etapy/runda6.jpg",
+     "label": "11:00 · Runda 6",
+     "text": "Anton i okna aplikacji z jednego, litera O jako orbita z różowym satelitą z drugiego. Poprawiamy zdjęcie profilowe, post i zbity logotyp, aż orbita wygląda jak część litery.",
+     "title": "Okno systemu + Orbita"
+    },
+    {
+     "alt": "rakietaOS obok Bizneswoman w trampkach w tym samym układzie",
+     "image": "etapy/sprawdzian.jpg",
+     "label": "11:09 · Sprawdzian",
+     "text": "Zestawienie z moją marką główną i test polskich znaków. Wspólne: róż, pigułki z liczbami, grube białe nagłówki i moja twarz.",
+     "title": "Obok Bizneswoman w trampkach"
+    },
+    {
+     "label": "11:19 · Akceptacja",
+     "text": "Logotyp z orbitą, ikona aplikacji z powiadomieniem, kobalt, róż jako akcent, Anton. Gdybym robiła to z grafikiem, czekałabym zwykle 2 do 6 tygodni i zapłaciła średnio ok. 1700 zł za samo logo.",
+     "title": "rakietaOS ma markę"
+    }
+   ],
+   "beforeAfter": {
+    "after": "etapy/dziennik-po.jpg",
+    "afterAlt": "Dziennik pokładowy w kobaltowym stylu rakietaOS",
+    "afterLabel": "11:25 · w barwach rakietaOS",
+    "before": "etapy/dziennik-przed.jpg",
+    "beforeAlt": "Dziennik pokładowy w różowym stylu Bizneswoman w trampkach",
+    "beforeLabel": "10:00 · w barwach BWT",
+    "text": "Rano dziennik nosił barwy Bizneswoman w trampkach. Przed południem przebrał się we własną markę.",
+    "title": "Dziennik przed i po"
+   }
+  }
+ },
+ "entries": [
+  {
+   "date": "2026-10-31",
+   "time": "",
+   "what": "Montaż rolki gadanej z napisami, gotowej do publikacji",
+   "project": "Content · Rolki",
+   "meMin": 15,
+   "osMin": 30,
+   "baseMin": 30,
+   "meanwhile": "manicure",
+   "note": "Nagranie 10 min + brief 5 min.",
+   "id": "2026-10-31-01-rolka"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "",
+   "what": "3 nowe wersje wczorajszej rolki na trial reels, różne od siebie, bez ryzyka blokady",
+   "project": "Content · Rolki",
+   "meMin": 0.5,
+   "osMin": 40,
+   "baseMin": 90,
+   "meanwhile": "kawa i spacer z psami",
+   "note": "Jedna komenda. Bazowo 3 × 30 min.",
+   "id": "2026-11-01-01-trial"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "09:11",
+   "what": "Projektujemy architekturę mojego OS: menu projektów, asystenci, marki, fundamenty",
+   "project": "Czat główny",
+   "meMin": 46,
+   "osMin": 46,
+   "meanwhile": "",
+   "note": "Praca wspólna, nowa rzecz, bez czasu bazowego.",
+   "id": "2026-11-01-02-architektura"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "09:57",
+   "what": "rakietaOS buduje Dziennik pokładowy i wieczorny automat",
+   "project": "Czat główny",
+   "meMin": 1,
+   "osMin": 10,
+   "meanwhile": "",
+   "note": "Moja praca: wybór godziny i akceptacja.",
+   "id": "2026-11-01-03-dziennik"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "10:31",
+   "what": "Sześć rund projektowania marki rakietaOS: od trzech kierunków do zatwierdzonego logo, kolorów, krojów i postów",
+   "project": "Czat główny",
+   "meMin": 48,
+   "osMin": 45,
+   "baseMin": 240,
+   "meanwhile": "byłam cały czas przy komputerze i decydowałam",
+   "note": "Bazowo 4 h mojej pracy przy współpracy z grafikiem (brief, rozmowy, uwagi do kolejnych rund). Kalendarzowo projekt logo u grafika to zwykle 2–6 tygodni, tu mniej niż godzina.",
+   "id": "2026-11-01-1031-branding"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "11:19",
+   "what": "rakietaOS zapisuje swój system marki i przebiera ten dziennik w nowe barwy",
+   "project": "Czat główny",
+   "meMin": 1,
+   "osMin": 12,
+   "meanwhile": "",
+   "note": "Moja praca: akceptacja.",
+   "id": "2026-11-01-1119-system-marki"
+  }
+ ]
+}

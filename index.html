@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dziennik pokładowy rakietaOS</title>
+<meta name="description" content="Dzień po dniu: jak buduję jednoosobowy biznes na własnym systemie AI. Co robię ja, co robi rakietaOS i ile czasu mi to oddaje.">
+<meta property="og:title" content="Dziennik pokładowy rakietaOS">
+<meta property="og:description" content="Co robię ja, co robi mój system AI i ile czasu mi to oddaje. Dzień po dniu.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rakietaos.monikabochynska.pl/">
+<meta property="og:locale" content="pl_PL">
+<meta name="theme-color" content="#3560D6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%233560D6'/%3E%3Ctext x='32' y='44' font-family='Impact,Arial Narrow,sans-serif' font-size='30' fill='%23fff' text-anchor='middle'%3EOS%3C/text%3E%3Ccircle cx='54' cy='10' r='8' fill='%23E6367B'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<script>
+/* Ustawienia formularza listy oczekujących.
+   formAction: adres wysyłki formularza z MailerLite (albo później z Easytools).
+   privacyUrl: link do polityki prywatności. */
+window.RAKIETAOS_CONFIG = {
+  formAction: "",
+  privacyUrl: "",
+  successText: "Jesteś na liście. Sprawdź skrzynkę i potwierdź zapis."
+};
+</script>
+<style>
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+/* Layout: rakietaOS – light page, every block is a system window with a kobalt title bar; counter window with orbit ring; day cards as windows in a 3/2/1 grid. Single light theme by brand choice. */
+:root {
+  --kobalt: #3560D6;
+  --kobalt-ciemny: #2A4FB8;
+  --roz: #E6367B;
+  --roz-tekst: #C2185F;
+  --granat: #0F1C3F;
+  --biel: #FFFFFF;
+  --tlo: #EEF2FC;
+  --linia: #C7D4F5;
+  --przygaszony: #4A5878;
+  --pierscien-tlo: #DCE5FF;
+  --shadow: 0 8px 24px rgba(15,28,63,0.10);
+  --font-display: Anton, Impact, "Arial Narrow", sans-serif;
+  --font-sans: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { background: var(--tlo); color: var(--granat); font-family: var(--font-sans); font-size: 16px; line-height: 1.55; }
+.wrap {
+  max-width: 1120px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 40px 64px;
+}
+.narrow { max-width: 760px; margin: 0 auto; }
+h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
+a { color: var(--kobalt-ciemny); }
+:focus-visible { outline: 3px solid var(--roz); outline-offset: 3px; border-radius: 6px; }
+.num { font-variant-numeric: tabular-nums; }
+.mono { font-family: var(--font-mono); }
+
+/* Logotyp */
+.logo { display: inline-flex; align-items: baseline; font-family: var(--font-display); line-height: 1; color: var(--granat); }
+.logo .os { color: var(--kobalt); margin-left: 0.06em; }
+.logo .o { position: relative; display: inline-block; isolation: isolate; }
+.logo .o svg { position: absolute; left: -38%; top: 26%; width: 176%; height: 56%; overflow: visible; pointer-events: none; }
+.logo .o .back { z-index: -1; }
+.logo .o .front { z-index: 1; }
+.logo .o .sat { position: absolute; left: calc(96.6% - 0.12em); top: calc(31.6% - 0.12em); width: 0.2em; height: 0.2em; border-radius: 50%; background: var(--roz); border: 0.03em solid var(--tlo); z-index: 2; }
+
+/* Header */
+.masthead { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 32px; }
+.icon { position: relative; flex-shrink: 0; width: 92px; height: 92px; border-radius: 22px; background: var(--kobalt); display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 24px rgba(53,96,214,0.30); font-family: var(--font-display); font-size: 42px; color: var(--biel); }
+.badge { position: absolute; top: -8px; right: -8px; min-width: 30px; height: 30px; padding: 0 6px; border-radius: 999px; background: var(--roz); border: 3px solid var(--tlo); color: var(--biel); font-family: var(--font-mono); font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+.masthead-text { display: grid; gap: 6px; min-width: 0; }
+.masthead .logo { font-size: clamp(52px, 9vw, 84px); }
+.kicker { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--przygaszony); }
+.title { font-family: var(--font-display); font-size: clamp(26px, 4vw, 34px); text-transform: uppercase; line-height: 1.05; }
+.lede { margin: 0; color: var(--przygaszony); max-width: 60ch; }
+
+/* Window */
+.win { background: var(--biel); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow); min-width: 0; }
+.bar { background: var(--kobalt); color: var(--biel); padding: 10px 16px; display: flex; align-items: center; gap: 8px; min-width: 0; }
+.bar.dark { background: var(--granat); }
+.dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; display: inline-block; }
+.dot.r { background: var(--roz); } .dot.w { background: var(--biel); } .dot.o { border: 2px solid var(--biel); }
+.bar .t { font-family: var(--font-mono); font-size: 13px; margin-left: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.body { padding: 22px 24px; }
+
+/* Counter */
+.counter { margin-top: 32px; }
+.counter .body { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 32px; }
+.ring { flex-shrink: 0; }
+.counter-data { flex: 1 1 320px; min-width: 0; display: grid; gap: 12px; }
+.versus { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.versus .big { font-family: var(--font-display); font-size: clamp(34px, 6vw, 48px); line-height: 1; }
+.versus .big.os { color: var(--kobalt); }
+.versus .cap, .lbl { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--przygaszony); }
+.versus .vs { font-family: var(--font-mono); font-size: 13px; color: var(--przygaszony); }
+.rule { height: 1px; background: var(--linia); }
+.saved { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.pill { display: inline-flex; align-items: center; gap: 6px; background: var(--roz); color: var(--biel); border-radius: 999px; padding: 4px 18px 6px; font-family: var(--font-display); font-size: clamp(26px, 5vw, 36px); line-height: 1.1; }
+.foot { font-size: 13px; color: var(--przygaszony); margin: 0; }
+
+/* Days grid */
+.section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 44px 0 16px; flex-wrap: wrap; }
+.section-head h2 { font-family: var(--font-display); font-size: 28px; text-transform: uppercase; }
+.section-head span { font-family: var(--font-mono); color: var(--przygaszony); font-size: 13px; }
+.grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.card .body { display: grid; gap: 12px; align-content: start; }
+.card h3 { font-family: var(--font-display); font-size: 24px; line-height: 1.1; text-transform: uppercase; }
+.card .lead { color: var(--przygaszony); font-size: 15px; margin: 0; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip { font-family: var(--font-mono); font-size: 12px; font-weight: 700; border-radius: 999px; padding: 4px 11px; background: var(--tlo); color: var(--granat); }
+.chip.hl { background: var(--roz); color: var(--biel); }
+.lock { font-family: var(--font-mono); font-size: 11px; border: 1px solid var(--linia); color: var(--przygaszony); border-radius: 999px; padding: 2px 9px; }
+.turb-mini { background: var(--tlo); border-radius: 12px; padding: 10px 12px; }
+.turb-mini .t { font-size: 14px; font-weight: 700; }
+.more { font-weight: 700; color: var(--kobalt-ciemny); text-decoration: none; font-size: 15px; }
+.more:hover { color: var(--granat); }
+.card.live .bar { background: var(--granat); }
+
+/* Day view */
+.crumbs { font-family: var(--font-mono); font-size: 12px; color: var(--przygaszony); display: flex; gap: 6px; flex-wrap: wrap; }
+.crumbs a { color: var(--przygaszony); }
+.day-head { display: grid; gap: 12px; margin-top: 18px; }
+.day-head h1 { font-family: var(--font-display); font-size: clamp(34px, 6vw, 52px); line-height: 1.02; text-transform: uppercase; }
+.meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; font-family: var(--font-mono); font-size: 13px; color: var(--przygaszony); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.stat { background: var(--biel); border-radius: 14px; padding: 14px 16px; min-width: 0; box-shadow: var(--shadow); }
+.stat .v { font-family: var(--font-display); font-size: 28px; line-height: 1.1; }
+.stat .v.txt { font-family: var(--font-sans); font-size: 17px; font-weight: 700; line-height: 1.35; }
+.stat.hl { background: var(--roz); color: var(--biel); }
+.stat.hl .lbl { color: var(--biel); }
+.method { font-size: 13px; color: var(--przygaszony); margin: 10px 0 0; }
+.block { margin-top: 26px; }
+.story { display: grid; gap: 14px; }
+.story p { margin: 0; }
+.story .t { font-family: var(--font-mono); font-weight: 700; color: var(--kobalt-ciemny); margin-right: 8px; }
+.stages { display: grid; gap: 0; }
+.stage { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 14px; padding-bottom: 18px; position: relative; }
+.stage::before { content: ""; position: absolute; left: 13px; top: 18px; bottom: 0; width: 2px; background: var(--linia); }
+.stage:last-child::before { display: none; }
+.stage .pt { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--kobalt); background: var(--biel); position: relative; z-index: 1; }
+.stage.final .pt { background: var(--roz); border-color: var(--roz); }
+.stage .lab { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--przygaszony); }
+.stage h3 { font-family: var(--font-display); font-size: 22px; text-transform: uppercase; line-height: 1.1; margin: 2px 0 4px; }
+.stage p { margin: 0; }
+.stage-img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; margin-top: 12px; box-shadow: var(--shadow); }
+.ba { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.ba figure { margin: 0; display: grid; gap: 8px; min-width: 0; }
+.ba img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow); }
+.ba figcaption { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--przygaszony); }
+@media (max-width: 620px) { .ba { grid-template-columns: 1fr; } }
+.log { overflow-x: auto; }
+.log table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 600px; }
+.log th, .log td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--linia); vertical-align: top; }
+.log th { font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--przygaszony); font-weight: 500; }
+.log tr:last-child td { border-bottom: 0; }
+.log td.n { white-space: nowrap; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.small { font-size: 12px; color: var(--przygaszony); }
+.turb h3 { font-family: var(--font-display); font-size: 22px; text-transform: uppercase; margin: 0 0 6px; }
+.turb p { margin: 0; }
+.idea { background: var(--kobalt); color: var(--biel); border-radius: 18px; padding: 24px; margin-top: 26px; position: relative; overflow: hidden; }
+.idea .lbl { color: var(--biel); }
+.idea .hook { font-family: var(--font-display); font-size: clamp(26px, 4.5vw, 36px); line-height: 1.05; text-transform: uppercase; margin: 10px 0 14px; position: relative; }
+.idea ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; position: relative; }
+.idea .orbit { position: absolute; right: -90px; top: -90px; opacity: 0.35; }
+.empty { text-align: center; color: var(--przygaszony); padding: 32px 16px; border: 1px dashed var(--linia); border-radius: 18px; background: var(--biel); }
+.note { text-align: center; color: var(--przygaszony); font-size: 14px; margin-top: 18px; }
+
+@media (max-width: 520px) {
+  .wrap { padding-block: 28px 48px; }
+  .stats { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: transform .2s ease; }
+  .card:hover { transform: translateY(-2px); }
+}
+
+/* Waitlist */
+.waitlist { margin-top: 32px; }
+.wl-body { display: grid; gap: 20px 32px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); align-items: start; }
+@media (max-width: 760px) { .wl-body { grid-template-columns: 1fr; } }
+.wl-title { font-family: var(--font-display); font-size: clamp(28px, 4.5vw, 38px); line-height: 1.05; text-transform: uppercase; margin-bottom: 10px; }
+.wl-title::after { content: ""; display: inline-block; width: 0.32em; height: 0.32em; border-radius: 50%; background: var(--roz); margin-left: 0.18em; vertical-align: 0.55em; }
+.wl-title .brand { text-transform: none; color: var(--kobalt); }
+.wl-copy p { margin: 0; color: var(--przygaszony); max-width: 46ch; }
+.wl-form { display: grid; gap: 12px; }
+.wl-fields { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); }
+@media (max-width: 520px) { .wl-fields { grid-template-columns: 1fr; } }
+.wl-field { display: grid; gap: 6px; min-width: 0; }
+.wl-field input { font: inherit; color: var(--granat); background: var(--tlo); border: 2px solid transparent; border-radius: 12px; padding: 12px 14px; width: 100%; min-width: 0; }
+.wl-field input:focus { outline: none; border-color: var(--kobalt); background: var(--biel); }
+.wl-consent { display: flex; gap: 10px; align-items: flex-start; font-size: 13px; color: var(--przygaszony); line-height: 1.45; }
+.wl-consent input { margin-top: 2px; width: 18px; height: 18px; accent-color: var(--kobalt); flex-shrink: 0; }
+.wl-btn { font-family: var(--font-display); font-size: 22px; letter-spacing: 0.02em; text-transform: uppercase; background: var(--kobalt); color: var(--biel); border: 0; border-radius: 999px; padding: 12px 28px 14px; cursor: pointer; justify-self: start; box-shadow: 0 8px 18px rgba(53,96,214,0.28); }
+.wl-btn:hover { background: var(--kobalt-ciemny); }
+.wl-btn:disabled { opacity: 0.6; cursor: default; }
+.wl-msg { margin: 0; min-height: 1.4em; font-size: 14px; font-weight: 700; color: var(--roz-tekst); }
+.wl-msg.ok { color: var(--kobalt-ciemny); }
+.wl-form.done .wl-fields, .wl-form.done .wl-consent, .wl-form.done .wl-btn { display: none; }
+.site-foot { max-width: 1120px; margin: 0 auto; padding: 0 16px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: var(--font-mono); font-size: 12px; color: var(--przygaszony); }
+.site-foot a { color: var(--przygaszony); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div id="view-home">
+    <header class="masthead">
+      <div class="icon" aria-hidden="true">OS<span class="badge" id="badge">0</span></div>
+      <div class="masthead-text">
+        <div class="logo" aria-label="rakietaOS">rakieta<span class="os"><span class="o"><svg class="back" viewBox="0 0 170 70" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="85" cy="35" rx="80" ry="17" fill="none" stroke="#3560D6" stroke-width="3" vector-effect="non-scaling-stroke" transform="rotate(-18 85 35)"></ellipse></svg>O<svg class="front" viewBox="0 0 170 70" preserveAspectRatio="none" aria-hidden="true"><path d="M5 35 A80 17 0 0 0 165 35" fill="none" stroke="#EEF2FC" stroke-width="8" vector-effect="non-scaling-stroke" transform="rotate(-18 85 35)"></path><path d="M5 35 A80 17 0 0 0 165 35" fill="none" stroke="#3560D6" stroke-width="3" vector-effect="non-scaling-stroke" transform="rotate(-18 85 35)"></path></svg><span class="sat"></span></span>S</span></div>
+        <div class="kicker">by Bizneswoman w trampkach</div>
+      </div>
+    </header>
+    <div style="margin-top: 22px; display: grid; gap: 8px">
+      <h1 class="title">Dziennik pokładowy Rakiety Biznesu</h1>
+      <p class="lede">Buduję cały swój jednoosobowy biznes na własnym systemie AI. Dzień po dniu pokazuję, co robię ja, co robi rakietaOS i ile czasu mi to oddaje.</p>
+    </div>
+
+    <section class="win counter" aria-label="Licznik lotu">
+      <div class="bar"><span class="dot r"></span><span class="dot w"></span><span class="dot o"></span><span class="t">Licznik lotu</span></div>
+      <div class="body">
+        <svg class="ring" width="140" height="140" viewBox="0 0 120 120" role="img" aria-label="Udział pracy rakietaOS w całej pracy">
+          <circle cx="60" cy="60" r="46" fill="none" stroke="#DCE5FF" stroke-width="14"></circle>
+          <circle id="ring-fill" cx="60" cy="60" r="46" fill="none" stroke="#3560D6" stroke-width="14" stroke-dasharray="0 289" transform="rotate(-90 60 60)"></circle>
+          <circle cx="60" cy="14" r="8" fill="#E6367B"></circle>
+        </svg>
+        <div class="counter-data">
+          <div class="versus">
+            <div><div class="big num" id="c-me">–</div><div class="cap">moja praca</div></div>
+            <div class="vs">vs</div>
+            <div style="text-align: right"><div class="big os num" id="c-os">–</div><div class="cap" style="text-transform: none; letter-spacing: 0.04em">PRACA rakietaOS</div></div>
+          </div>
+          <div class="rule"></div>
+          <div class="saved">
+            <span>Odzyskany czas dzięki rakietaOS do dziś</span>
+            <span class="pill num" id="c-saved">–</span>
+          </div>
+          <p class="foot" id="c-foot">Wczytuję dziennik…</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="win waitlist" id="lista" aria-labelledby="wl-title">
+      <div class="bar"><span class="dot r"></span><span class="dot w"></span><span class="dot o"></span><span class="t">Lista oczekujących</span></div>
+      <div class="body wl-body">
+        <div class="wl-copy">
+          <h2 class="wl-title" id="wl-title">Chcę <span class="brand">rakietaOS</span> dla siebie</h2>
+          <p>Składam rakietaOS w wersję, którą zbudujesz u siebie. Zapisz się, a dam Ci znać jako pierwszej, kiedy otworzę drzwi.</p>
+        </div>
+        <form class="wl-form" id="wl-form" method="post" target="wl-sink" novalidate>
+          <div class="wl-fields">
+            <label class="wl-field"><span class="lbl">Imię</span><input type="text" name="fields[name]" autocomplete="given-name" placeholder="Twoje imię"></label>
+            <label class="wl-field"><span class="lbl">E-mail</span><input type="email" name="fields[email]" autocomplete="email" placeholder="ty@twojadomena.pl" required></label>
+          </div>
+          <label class="wl-consent"><input type="checkbox" id="wl-consent" required> <span id="wl-consent-text">Zgadzam się na otrzymywanie maili o rakietaOS. Mogę wypisać się w każdej chwili.</span></label>
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <button type="submit" class="wl-btn" id="wl-btn">Zapisuję się</button>
+          <p class="wl-msg" id="wl-msg" role="status" aria-live="polite"></p>
+        </form>
+        <iframe name="wl-sink" title="" hidden></iframe>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <h2>Dni lotu</h2>
+      <span id="days-count"></span>
+    </div>
+    <div class="grid" id="days"></div>
+    <div class="empty" id="days-empty" hidden>Pierwsze dni lotu pojawią się tu wieczorem.</div>
+    <p class="note" id="status-note" hidden></p>
+  </div>
+
+  <div id="view-day" hidden>
+    <div class="narrow" id="day-body"></div>
+  </div>
+</div>
+<footer class="site-foot">
+  <span>rakietaOS by <a href="https://monikabochynska.pl">Bizneswoman w trampkach</a></span>
+  <span id="updated"></span>
+</footer>
+<script>
+(function () {
+  var MONTHS = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
+  var WEEKDAYS = ["niedziela","poniedziałek","wtorek","środa","czwartek","piątek","sobota"];
+  var state = { days: {}, entries: [], updated: "", loaded: { days: false, entries: false } };
+  var BAR = '<span class="dot r"></span><span class="dot w"></span><span class="dot o"></span>';
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function parseDate(iso) { var p = iso.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function fmtDate(iso, withYear) {
+    var d = parseDate(iso);
+    return WEEKDAYS[d.getDay()] + ", " + d.getDate() + " " + MONTHS[d.getMonth()] + (withYear ? " " + d.getFullYear() : "");
+  }
+  function fmtMin(min) {
+    min = Number(min) || 0;
+    if (min <= 0) return "0 min";
+    if (min < 1) return Math.round(min * 60) + " s";
+    var total = Math.round(min);
+    var h = Math.floor(total / 60), m = total % 60;
+    if (!h) return m + " min";
+    return h + " h" + (m ? " " + m + " min" : "");
+  }
+  function savedOf(e) {
+    if (e.baseMin == null || e.baseMin === "") return 0;
+    return Math.max(0, Number(e.baseMin) - (Number(e.meMin) || 0));
+  }
+  function visible(x) { return !x.private; }
+
+  function byDate() {
+    var map = {};
+    state.entries.forEach(function (e) {
+      if (!e.date) return;
+      (map[e.date] = map[e.date] || []).push(e);
+    });
+    Object.keys(map).forEach(function (k) {
+      map[k].sort(function (a, b) { return String(a.time || "").localeCompare(String(b.time || "")) || String(a.id).localeCompare(String(b.id)); });
+    });
+    return map;
+  }
+  function totals(list) {
+    var t = { me: 0, os: 0, saved: 0 };
+    list.forEach(function (e) { t.me += Number(e.meMin) || 0; t.os += Number(e.osMin) || 0; t.saved += savedOf(e); });
+    return t;
+  }
+  var START = "2026-10-31";
+  function dayNoFor(iso) { return Math.round((parseDate(iso) - parseDate(START)) / 86400000) + 1; }
+
+  function renderHome() {
+    var map = byDate();
+    var t = totals(state.entries);
+    document.getElementById("c-me").textContent = fmtMin(t.me);
+    document.getElementById("c-os").textContent = fmtMin(t.os);
+    document.getElementById("c-saved").textContent = fmtMin(t.saved);
+    var share = (t.me + t.os) > 0 ? t.os / (t.me + t.os) : 0;
+    var len = 2 * Math.PI * 46;
+    document.getElementById("ring-fill").setAttribute("stroke-dasharray", (share * len).toFixed(1) + " " + len.toFixed(1));
+    var dates = Object.keys(map).concat(Object.keys(state.days)).filter(function (v, i, a) { return a.indexOf(v) === i; }).sort().reverse();
+    document.getElementById("badge").textContent = dates.length;
+    var foot = document.getElementById("c-foot");
+    if (!state.loaded.entries) { foot.textContent = "Wczytuję dziennik…"; }
+    else if (!dates.length) { foot.textContent = "Licznik ruszy po pierwszym wpisie."; }
+    else {
+      var last = dates[0];
+      var lt = totals(map[last] || []);
+      foot.textContent = "Suma z " + dates.length + " " + (dates.length === 1 ? "dnia" : "dni") + " lotu, ostatni: " + fmtDate(last) + " (ja " + fmtMin(lt.me) + ", rakietaOS " + fmtMin(lt.os) + "). Pierścień pokazuje, jaką część całej pracy wykonał system. Odzyskany czas liczę ostrożnie: tyle, ile ta sama praca zajmowała mi kiedyś, minus moja praca dziś.";
+    }
+
+    var wrap = document.getElementById("days");
+    var shown = dates.filter(function (d) { var day = state.days[d]; return !day || visible(day); });
+    document.getElementById("days-count").textContent = shown.length ? shown.length + " " + (shown.length === 1 ? "dzień" : "dni") : "";
+    document.getElementById("days-empty").hidden = !(state.loaded.entries && state.loaded.days && !shown.length);
+    wrap.innerHTML = shown.map(function (d) {
+      var day = state.days[d];
+      var list = (map[d] || []).filter(visible);
+      var dt = totals(list);
+      var no = day && day.dayNo ? day.dayNo : dayNoFor(d);
+      var title = day && day.title ? esc(day.title) : "W locie";
+      var lead = day && day.lead ? esc(day.lead) : "Dziennik tego dnia powstanie o 21:00. Na razie " + list.length + " " + (list.length === 1 ? "wpis" : "wpisy") + ".";
+      var turb = day && day.turbulence && day.turbulence.title
+        ? '<div class="turb-mini"><div class="lbl">Turbulencje</div><div class="t">' + esc(day.turbulence.title) + "</div></div>" : "";
+      var lock = day && day.private ? '<span class="lock">prywatne</span>' : "";
+      return '<article class="win card' + (day ? "" : " live") + '">' +
+        '<div class="bar">' + BAR + '<span class="t">Dzień ' + no + " · " + fmtDate(d) + "</span></div>" +
+        '<div class="body">' + (lock ? "<div>" + lock + "</div>" : "") +
+        "<h3>" + title + "</h3>" +
+        '<p class="lead">' + lead + "</p>" +
+        '<div class="chips"><span class="chip num">ja ' + fmtMin(dt.me) + '</span><span class="chip num">rakietaOS ' + fmtMin(dt.os) + "</span>" +
+        (dt.saved ? '<span class="chip hl num">odzyskane ' + fmtMin(dt.saved) + "</span>" : "") + "</div>" +
+        turb +
+        '<a class="more" href="#dzien-' + d + '">Czytaj cały dzień →</a>' +
+        "</div></article>";
+    }).join("");
+  }
+
+  function renderDay(d) {
+    var day = state.days[d];
+    var list = (byDate()[d] || []).filter(visible);
+    var body = document.getElementById("day-body");
+    if (day && !visible(day)) { day = null; }
+    var dt = totals(list);
+    var meanwhile = list.map(function (e) { return e.meanwhile; }).filter(Boolean);
+    var no = day && day.dayNo ? day.dayNo : dayNoFor(d);
+    var html = '<nav class="crumbs"><a href="#">Dziennik pokładowy</a><span>/</span><span>Dzień ' + no + "</span></nav>";
+    html += '<div class="day-head"><div class="meta"><span>Dzień ' + no + "</span><span>·</span><span>" + fmtDate(d, true) + "</span>" + (day && day.private ? '<span class="lock">prywatne</span>' : "") + "</div>";
+    html += "<h1>" + (day && day.title ? esc(day.title) : "W locie") + "</h1>";
+    if (day && day.lead) html += '<div class="win"><div class="bar">' + BAR + '<span class="t">W skrócie</span></div><div class="body">' + esc(day.lead) + "</div></div>";
+    html += "</div>";
+    html += '<div class="stats">' +
+      '<div class="stat"><div class="lbl">moja praca</div><div class="v num">' + fmtMin(dt.me) + "</div></div>" +
+      '<div class="stat"><div class="lbl">praca rakietaOS</div><div class="v num">' + fmtMin(dt.os) + "</div></div>" +
+      '<div class="stat hl"><div class="lbl">odzyskany czas</div><div class="v num">' + fmtMin(dt.saved) + "</div></div>" +
+      '<div class="stat"><div class="lbl">a ja w tym czasie</div><div class="v txt">' + (meanwhile.length ? esc(meanwhile.join(", ")) : "–") + "</div></div>" +
+      "</div>";
+    html += '<p class="method">Mój czas podaję sama. Czas rakietaOS to czas pracy systemu nad zadaniem. Odzyskany czas: dawny czas ręcznej pracy minus moja praca dziś.</p>';
+
+    if (day && day.story && day.story.length) {
+      html += '<div class="win block"><div class="bar">' + BAR + '<span class="t">Godzina po godzinie</span></div><div class="body story">' + day.story.map(function (s) {
+        return "<p>" + (s.time ? '<span class="t num">' + esc(s.time) + "</span>" : "") + esc(s.text) + "</p>";
+      }).join("") + "</div></div>";
+    } else if (!day) {
+      html += '<p class="method">Opis dnia powstanie o 21:00 z wpisów poniżej.</p>';
+    }
+
+    if (day && day.stages && day.stages.length) {
+      html += '<div class="win block"><div class="bar">' + BAR + '<span class="t">' + esc(day.stagesTitle || "Etapy") + '</span></div><div class="body stages">' + day.stages.map(function (s, i, arr) {
+        return '<div class="stage' + (i === arr.length - 1 ? " final" : "") + '"><span class="pt"></span><div><div class="lab">' + esc(s.label || "") + "</div><h3>" + esc(s.title || "") + "</h3><p>" + esc(s.text || "") + "</p>" + (s.image ? '<img class="stage-img" src="' + esc(s.image) + '" alt="' + esc(s.alt || s.title || "") + '" loading="lazy">' : "") + "</div></div>";
+      }).join("") + "</div></div>";
+    }
+
+    if (day && day.beforeAfter && day.beforeAfter.before && day.beforeAfter.after) {
+      var ba = day.beforeAfter;
+      html += '<div class="win block"><div class="bar">' + BAR + '<span class="t">' + esc(ba.title || "Przed i po") + '</span></div><div class="body">' + (ba.text ? '<p style="margin:0 0 14px">' + esc(ba.text) + "</p>" : "") + '<div class="ba"><figure><img src="' + esc(ba.before) + '" alt="' + esc(ba.beforeAlt || "Przed") + '" loading="lazy"><figcaption>' + esc(ba.beforeLabel || "Przed") + '</figcaption></figure><figure><img src="' + esc(ba.after) + '" alt="' + esc(ba.afterAlt || "Po") + '" loading="lazy"><figcaption>' + esc(ba.afterLabel || "Po") + "</figcaption></figure></div></div></div>";
+    }
+
+    if (list.length) {
+      html += '<div class="win block"><div class="bar">' + BAR + '<span class="t">Wpisy z dnia</span></div><div class="log"><table><thead><tr><th>Godz.</th><th>Co zrobił rakietaOS</th><th>Ja</th><th>rakietaOS</th><th>Odzyskane</th><th>A ja w tym czasie</th></tr></thead><tbody>' +
+        list.map(function (e) {
+          return '<tr><td class="n">' + esc(e.time || "–") + "</td><td>" + esc(e.what) + (e.project ? '<div class="small">' + esc(e.project) + "</div>" : "") + (e.note ? '<div class="small">' + esc(e.note) + "</div>" : "") + (e.private ? ' <span class="lock">prywatne</span>' : "") +
+            '</td><td class="n">' + fmtMin(e.meMin) + '</td><td class="n">' + fmtMin(e.osMin) + '</td><td class="n">' + (e.baseMin != null && e.baseMin !== "" ? fmtMin(savedOf(e)) : "–") +
+            "</td><td>" + esc(e.meanwhile || "–") + "</td></tr>";
+        }).join("") + "</tbody></table></div></div>";
+    }
+
+    if (day && day.turbulence && day.turbulence.title) {
+      html += '<section class="win block turb"><div class="bar dark">' + BAR + '<span class="t">Turbulencje</span></div><div class="body"><h3>' + esc(day.turbulence.title) + "</h3><p>" + esc(day.turbulence.text) + "</p></div></section>";
+    }
+    if (day && day.idea && day.idea.hook) {
+      html += '<section class="idea"><svg class="orbit" width="260" height="260" viewBox="0 0 260 260" aria-hidden="true"><circle cx="130" cy="130" r="120" fill="none" stroke="#FFFFFF" stroke-width="2"></circle><circle cx="130" cy="130" r="78" fill="none" stroke="#FFFFFF" stroke-width="2"></circle><circle cx="46" cy="215" r="10" fill="#E6367B"></circle></svg><div class="lbl">Pomysł na content z tego dnia · ' + esc(day.idea.format || "") + '</div><div class="hook">' + esc(day.idea.hook) + "</div>" +
+        (day.idea.script && day.idea.script.length ? "<ol>" + day.idea.script.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + "</ol>" : "") + "</section>";
+    }
+    html += '<p class="note"><a href="#">← Wszystkie dni lotu</a></p>';
+    body.innerHTML = html;
+  }
+
+  function route() {
+    var h = (location.hash || "").replace(/^#/, "");
+    var m = h.match(/^dzien-(\d{4}-\d{2}-\d{2})$/);
+    document.getElementById("view-home").hidden = !!m;
+    document.getElementById("view-day").hidden = !m;
+    if (m) { renderDay(m[1]); window.scrollTo(0, 0); } else { renderHome(); }
+  }
+  window.addEventListener("hashchange", route);
+  route();
+
+  function showNote(t) { var n = document.getElementById("status-note"); n.textContent = t; n.hidden = !t; }
+
+  function waitlist() {
+    var cfg = window.RAKIETAOS_CONFIG || {};
+    var form = document.getElementById("wl-form");
+    var msg = document.getElementById("wl-msg");
+    var btn = document.getElementById("wl-btn");
+    if (cfg.privacyUrl) {
+      document.getElementById("wl-consent-text").insertAdjacentHTML("beforeend", ' Szczegóły w <a href="' + esc(cfg.privacyUrl) + '" target="_blank" rel="noopener">polityce prywatności</a>.');
+    }
+    if (cfg.formAction) form.action = cfg.formAction;
+    var sent = false;
+    document.querySelector('iframe[name="wl-sink"]').addEventListener("load", function () {
+      if (!sent) return;
+      sent = false;
+      form.reset();
+      btn.disabled = false;
+      form.classList.add("done");
+      msg.className = "wl-msg ok";
+      msg.textContent = cfg.successText || "Jesteś na liście. Sprawdź skrzynkę i potwierdź zapis.";
+    });
+    form.addEventListener("submit", function (ev) {
+      var email = form.querySelector('input[type="email"]');
+      var consent = document.getElementById("wl-consent");
+      msg.className = "wl-msg";
+      if (!email.value || !email.checkValidity()) { ev.preventDefault(); msg.textContent = "Wpisz poprawny adres e-mail."; email.focus(); return; }
+      if (!consent.checked) { ev.preventDefault(); msg.textContent = "Zaznacz zgodę, żebym mogła do Ciebie pisać."; consent.focus(); return; }
+      if (!cfg.formAction) { ev.preventDefault(); msg.textContent = "Zapisy ruszają lada dzień. Zajrzyj tu wkrótce."; return; }
+      sent = true;
+      btn.disabled = true;
+      msg.textContent = "Zapisuję…";
+    });
+  }
+  waitlist();
+
+  fetch("data.json", { cache: "no-store" }).then(function (r) {
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }).then(function (data) {
+    state.days = data.days || {};
+    state.entries = data.entries || [];
+    state.updated = data.updated || "";
+    state.loaded.entries = state.loaded.days = true;
+    if (state.updated) {
+      var u = new Date(state.updated);
+      document.getElementById("updated").textContent = "Ostatnia aktualizacja: " + u.toLocaleDateString("pl-PL", { day: "numeric", month: "long" }) + ", " + u.toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+    }
+    route();
+  }).catch(function () {
+    state.loaded.entries = state.loaded.days = true;
+    showNote("Nie udało się wczytać dziennika. Odśwież stronę za chwilę.");
+    route();
+  });
+})();
+</script>
+</body>
+</html>
