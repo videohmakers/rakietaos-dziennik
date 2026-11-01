@@ -216,6 +216,14 @@ a { color: var(--kobalt-ciemny); }
 .site-foot { max-width: 1120px; margin: 0 auto; padding: 0 16px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-family: var(--font-mono); font-size: 12px; color: var(--przygaszony); }
 .site-foot a { color: var(--przygaszony); }
 
+.more-wrap { display: flex; justify-content: center; margin-top: 22px; }
+.more-btn { font-family: var(--font-mono); font-size: 14px; font-weight: 700; color: var(--biel); background: var(--kobalt); border: 0; border-radius: 999px; padding: 12px 22px; min-height: 44px; cursor: pointer; box-shadow: var(--shadow); }
+.more-btn:hover { background: var(--kobalt-ciemny); }
+.to-top { position: fixed; right: calc(20px + env(safe-area-inset-right, 0px)); bottom: calc(20px + env(safe-area-inset-bottom, 0px)); width: 52px; height: 52px; border-radius: 50%; border: 0; background: var(--kobalt); color: var(--biel); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 10px 24px rgba(53,96,214,0.35); z-index: 20; }
+.more-wrap[hidden], .to-top[hidden] { display: none; }
+body { padding-bottom: 84px; }
+.to-top:hover { background: var(--kobalt-ciemny); }
+.to-top .sat { position: absolute; top: 4px; right: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--roz); border: 2px solid var(--biel); }
 </style>
 </head>
 <body>
@@ -287,6 +295,7 @@ a { color: var(--kobalt-ciemny); }
       <span id="days-count"></span>
     </div>
     <div class="grid" id="days"></div>
+    <div class="more-wrap" id="more-wrap" hidden><button type="button" class="more-btn" id="more-btn"></button></div>
     <div class="empty" id="days-empty" hidden>Pierwsze dni lotu pojawią się tu wieczorem.</div>
     <p class="note" id="status-note" hidden></p>
   </div>
@@ -299,11 +308,21 @@ a { color: var(--kobalt-ciemny); }
   <span>rakietaOS by <a href="https://www.instagram.com/bizneswoman_w_trampkach/" target="_blank" rel="noopener">Bizneswoman w trampkach</a></span>
   <span id="updated"></span>
 </footer>
+<button type="button" class="to-top" id="to-top" aria-label="Wróć na górę strony" hidden><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="sat"></span></button>
 <script>
 (function () {
   var MONTHS = ["stycznia","lutego","marca","kwietnia","maja","czerwca","lipca","sierpnia","września","października","listopada","grudnia"];
   var WEEKDAYS = ["niedziela","poniedziałek","wtorek","środa","czwartek","piątek","sobota"];
   var state = { days: {}, entries: [], updated: "", loaded: { days: false, entries: false } };
+  var showCount = 6;
+  document.getElementById("more-btn").addEventListener("click", function () { showCount += 12; renderHome(); });
+  var toTop = document.getElementById("to-top");
+  function onScroll() { toTop.hidden = window.scrollY < 500; }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  toTop.addEventListener("click", function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+  });
   var BAR = '<span class="dot r"></span><span class="dot w"></span><span class="dot o"></span>';
 
   function esc(s) {
@@ -373,7 +392,11 @@ a { color: var(--kobalt-ciemny); }
     var shown = dates.filter(function (d) { var day = state.days[d]; return !day || visible(day); });
     document.getElementById("days-count").textContent = shown.length ? shown.length + " " + (shown.length === 1 ? "dzień" : "dni") : "";
     document.getElementById("days-empty").hidden = !(state.loaded.entries && state.loaded.days && !shown.length);
-    wrap.innerHTML = shown.map(function (d) {
+    var moreWrap = document.getElementById("more-wrap");
+    var rest = shown.length - showCount;
+    moreWrap.hidden = rest <= 0;
+    if (rest > 0) document.getElementById("more-btn").textContent = "Pokaż wcześniejsze dni (" + rest + ")";
+    wrap.innerHTML = shown.slice(0, showCount).map(function (d) {
       var day = state.days[d];
       var list = (map[d] || []).filter(visible);
       var dt = totals(list);
