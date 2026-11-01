@@ -182,6 +182,13 @@ a { color: var(--kobalt-ciemny); }
   .card:hover { transform: translateY(-2px); }
 }
 
+/* Jump */
+.jump-wrap { display: flex; justify-content: center; margin-top: 28px; }
+.jump { font-family: var(--font-display); font-size: clamp(18px, 3vw, 22px); text-transform: uppercase; letter-spacing: 0.02em; color: var(--kobalt-ciemny); background: var(--biel); border: 2px solid var(--kobalt); border-radius: 999px; padding: 10px 24px 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; max-width: 100%; text-align: center; box-shadow: var(--shadow); }
+.jump .brand { text-transform: none; }
+.jump .arr { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--roz); color: var(--biel); font-family: var(--font-sans); font-size: 16px; flex-shrink: 0; }
+.jump:hover { background: var(--kobalt); color: var(--biel); }
+.waitlist { margin-top: 28px; }
 /* Waitlist */
 .waitlist { margin-top: 32px; }
 .wl-body { display: grid; gap: 20px 32px; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); align-items: start; }
@@ -249,6 +256,8 @@ a { color: var(--kobalt-ciemny); }
     </section>
 
 
+    <div class="jump-wrap"><button type="button" class="jump" id="jump">Przejdź do dziennika pokładowego <span class="brand">rakietaOS</span> <span class="arr" aria-hidden="true">↓</span></button></div>
+
     <section class="win waitlist" id="lista" aria-labelledby="wl-title">
       <div class="bar"><span class="dot r"></span><span class="dot w"></span><span class="dot o"></span><span class="t">Lista oczekujących</span></div>
       <div class="body wl-body">
@@ -271,7 +280,7 @@ a { color: var(--kobalt-ciemny); }
       </div>
     </section>
 
-    <div class="section-head">
+    <div class="section-head" id="dni-lotu">
       <h2>Dni lotu</h2>
       <span id="days-count"></span>
     </div>
@@ -489,6 +498,10 @@ a { color: var(--kobalt-ciemny); }
       msg.textContent = "Zapisuję…";
     });
   }
+  document.getElementById("jump").addEventListener("click", function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.getElementById("dni-lotu").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  });
   waitlist();
 
   fetch("data.json", { cache: "no-store" }).then(function (r) {
