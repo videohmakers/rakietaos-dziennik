@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T11:08:06+00:00",
+ "updated": "2026-11-02T07:50:51+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -39,23 +39,15 @@
    "date": "2026-11-01",
    "dayNo": 2,
    "title": "Od trzech rolek do własnej marki",
-   "lead": "Rano jedno zdanie i trzy wersje rolki. Potem architektura całego systemu, nazwa rakietaOS i sześć rund projektowania marki, które zamiast tygodni z grafikiem zajęły mniej niż godzinę.",
+   "lead": "Rano trzy wersje rolki z jednego zdania, potem architektura systemu i sześć rund projektowania marki rakietaOS w mniej niż godzinę. Po południu rakietaOS projektuje nowy landing SOUL MATES, a ja oglądam serial.",
    "story": [
     {
-     "text": "Jedna prośba do rakietaOS: trzy nowe wersje wczorajszej rolki. Zajmuje mi to 30 sekund.",
+     "text": "Jedna prośba do rakietaOS: trzy nowe wersje wczorajszej rolki. Zajmuje mi to 30 sekund. Piję kawę i idę na spacer z psami, a po 40 minutach mam trzy różne wersje na trial reels, bez strachu o blokadę.",
      "time": ""
     },
     {
-     "text": "Piję kawę i idę na spacer z psami. Po 40 minutach mam trzy różne wersje, które mogę puścić jako trial reels bez strachu o blokadę.",
-     "time": ""
-    },
-    {
-     "text": "Siadamy do planowania mojego OS: co ma robić, w jakiej kolejności i jak ułożyć menu, żeby nie zrobił się bałagan.",
+     "text": "Siadamy do planowania mojego OS: co ma robić, w jakiej kolejności i jak ułożyć menu, żeby nie zrobił się bałagan. O 9:57 rakietaOS buduje ten dziennik i automat, który co wieczór o 21:00 będzie go uzupełniał.",
      "time": "9:11"
-    },
-    {
-     "text": "rakietaOS buduje ten dziennik i automat, który co wieczór o 21:00 będzie go uzupełniał.",
-     "time": "9:57"
     },
     {
      "text": "Mój system ma nazwę: rakietaOS. Zapis jak macOS. Konto na Instagramie jest wolne, rezerwuję je.",
@@ -68,6 +60,18 @@
     {
      "text": "Akceptuję. Cieszę się jak dziecko. rakietaOS zapisuje system marki i przebiera ten dziennik w nowe barwy.",
      "time": "11:19"
+    },
+    {
+     "text": "Po południu landing SOUL MATES. Daję screeny i statystyki z Easytools, rakietaOS analizuje stronę na telefonie. Szkicujemy układ: moje teksty i kolejność zostają, zmieniamy tylko wygląd, w kolorach BWT.",
+     "time": "16:16"
+    },
+    {
+     "text": "rakietaOS projektuje cały landing w Claude Design, na komputer i telefon, z moimi zdjęciami i opiniami. Ja oglądam serial i daję uwagi. 10 minut mojej pracy zamiast co najmniej 3 godzin.",
+     "time": "16:52"
+    },
+    {
+     "text": "Import na testowej kopii w Easytools i przegląd strony. Reklamy puszczam na starym landingu, nowy wchodzi za 1–2 tygodnie.",
+     "time": "18:46"
     }
    ],
    "turbulence": {
@@ -223,6 +227,51 @@
    "meanwhile": "",
    "note": "Moja praca: akceptacja.",
    "id": "2026-11-01-1119-system-marki"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "16:16",
+   "what": "rakietaOS analizuje landing SOUL MATES: moje statystyki z Easytools, strona na telefonie, inspiracja graficzna",
+   "project": "Landingi",
+   "meMin": 15,
+   "osMin": 15,
+   "meanwhile": "",
+   "note": "Szacunek z przebiegu rozmowy. Moja praca: screeny, odpowiedzi na pytania.",
+   "id": "2026-11-01-1616-soulmates-analiza"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "16:38",
+   "what": "Szkice układu landingu i ustalenia: moje teksty i kolejność zostają, zmieniamy tylko wygląd, moje kolory BWT",
+   "project": "Landingi",
+   "meMin": 15,
+   "osMin": 10,
+   "meanwhile": "",
+   "note": "Szacunek. Trzy wersje szkicu, poprawki na moich uwagach.",
+   "id": "2026-11-01-1638-soulmates-szkice"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "16:52",
+   "what": "rakietaOS projektuje cały landing SOUL MATES w Claude Design (komputer + telefon), wstawia moje zdjęcia i opinie, poprawia układ",
+   "project": "Landingi",
+   "meMin": 10,
+   "osMin": 45,
+   "baseMin": 180,
+   "meanwhile": "oglądałam serial",
+   "note": "Szacunek. Moja praca: akceptacja i uwagi. Bazowo: prosty landing w Easytools to ok. 30 min, ale landing tej jakości (Rakieta Biznesu) robię sama od kilku dni po godzinie i wciąż nie jest skończony, więc liczę co najmniej 3 h.",
+   "id": "2026-11-01-1652-soulmates-projekt"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "18:46",
+   "what": "Import nowego landingu do Easytools na testowej kopii i przegląd testowej strony; reklamy odpalone na starym landingu, nowy wchodzi za 1–2 tygodnie",
+   "project": "Landingi",
+   "meMin": 15,
+   "osMin": 15,
+   "meanwhile": "",
+   "note": "Szacunek. rakietaOS przygotował paczkę ZIP do importu i sprawdził stronę po imporcie.",
+   "id": "2026-11-01-1846-soulmates-import"
   }
  ]
 }
