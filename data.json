@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T07:50:51+00:00",
+ "updated": "2026-11-02T12:47:53+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -33,6 +33,12 @@
      "Pokaż, ile kiedyś siedziałaś nad prostszą rolką: pół godziny.",
      "Zakończ pytaniem: na co Ty wydałabyś te pół godziny?"
     ]
+   },
+   "inspiration": {
+    "linkText": "Paula na Instagramie: @ogiettaj",
+    "text": "Z Claude pracuję od dawna, rolki montowałam z nim, zanim powstał ten dziennik. Sam pomysł, żeby codziennie zapisywać i pokazywać, co robię ja, a co mój system, podsunęła mi Paula Balicka-Zańczak, która prowadzi taki dziennik u siebie. Mój mierzy inne rzeczy i wygląda po swojemu, ale inspiracja przyszła od niej. Dziękuję, Paula!",
+    "title": "Skąd ten dziennik",
+    "url": "https://www.instagram.com/ogiettaj/"
    }
   },
   "2026-11-01": {
@@ -272,6 +278,42 @@
    "meanwhile": "",
    "note": "Szacunek. rakietaOS przygotował paczkę ZIP do importu i sprawdził stronę po imporcie.",
    "id": "2026-11-01-1846-soulmates-import"
+  },
+  {
+   "date": "2026-11-01",
+   "time": "20:01",
+   "what": "rakietaOS robi listopadowe grafiki z planem spotkań dla Mastermindu i Klubu RB w stylu BWT i pomaga wybrać termin Q&A",
+   "project": "KOKPIT",
+   "meMin": 10,
+   "osMin": 8,
+   "baseMin": 80,
+   "meanwhile": "",
+   "note": "Szacunek. Bazowo: dwie grafiki robione ręcznie, ok. 40 min każda.",
+   "id": "2026-11-01-2001-plan-listopad"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "09:05",
+   "what": "rakietaOS przejmuje całą comiesięczną komunikację Rakiety Biznesu i Klubu RB: skill, 4 zaplanowane zadania, pierwsze wysyłki na WhatsApp (wiadomości, grafiki, wydarzenie) z mojego komputera",
+   "project": "KOKPIT",
+   "meMin": 45,
+   "osMin": 50,
+   "baseMin": 75,
+   "meanwhile": "",
+   "note": "Szacunek. Bazowo w tym miesiącu: liczenie dat ok. 30 min, dwie wiadomości ok. 40 min, wydarzenie ok. 5 min. Od grudnia cały cykl to ok. 3,5 h mojej pracy miesięcznie zamiast ok. 15 min akceptów.",
+   "id": "2026-11-02-0905-automat-planu"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "10:31",
+   "what": "rakietaOS aktualizuje daty w opisach formularzy Content Review i Q&A Klubu i dopisuje to do comiesięcznego automatu",
+   "project": "KOKPIT",
+   "meMin": 3,
+   "osMin": 6,
+   "baseMin": 10,
+   "meanwhile": "",
+   "note": "Szacunek. Moja praca: jednorazowe logowanie do Google w przeglądarce Claude. Bazowo: ok. 5 min na formularz.",
+   "id": "2026-11-02-1031-formularze"
   }
  ]
 }

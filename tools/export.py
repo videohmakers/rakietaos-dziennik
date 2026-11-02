@@ -24,7 +24,7 @@ BLOCKED = [r"rakieta\s+biznesu\s+live", r"\bRBL\b"]
 
 ENTRY_FIELDS = ["date", "time", "what", "project", "meMin", "osMin", "baseMin", "meanwhile", "note"]
 DAY_FIELDS = ["date", "dayNo", "title", "lead", "story", "turbulence", "idea",
-              "stagesTitle", "stages", "beforeAfter"]
+              "stagesTitle", "stages", "beforeAfter", "inspiration"]
 
 
 def load(dirpath):

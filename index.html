@@ -448,6 +448,12 @@ body { padding-bottom: 84px; }
       html += '<p class="method">Opis dnia powstanie o 21:00 z wpisów poniżej.</p>';
     }
 
+    if (day && day.inspiration && day.inspiration.text) {
+      var ins = day.inspiration;
+      var insLink = (ins.url && /^https:\/\//.test(ins.url)) ? ' <a href="' + esc(ins.url) + '" target="_blank" rel="noopener">' + esc(ins.linkText || ins.url) + "</a>" : "";
+      html += '<div class="win block"><div class="bar">' + BAR + '<span class="t">' + esc(ins.title || "Inspiracja") + '</span></div><div class="body"><p style="margin:0">' + esc(ins.text) + insLink + "</p></div></div>";
+    }
+
     if (day && day.stages && day.stages.length) {
       html += '<div class="win block"><div class="bar">' + BAR + '<span class="t">' + esc(day.stagesTitle || "Etapy") + '</span></div><div class="body stages">' + day.stages.map(function (s, i, arr) {
         return '<div class="stage' + (i === arr.length - 1 ? " final" : "") + '"><span class="pt"></span><div><div class="lab">' + esc(s.label || "") + "</div><h3>" + esc(s.title || "") + "</h3><p>" + esc(s.text || "") + "</p>" + (s.image ? '<img class="stage-img" src="' + esc(s.image) + '" alt="' + esc(s.alt || s.title || "") + '" loading="lazy">' : "") + "</div></div>";
