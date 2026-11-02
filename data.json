@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T13:09:39+00:00",
+ "updated": "2026-11-02T20:08:45+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -162,6 +162,45 @@
     "text": "Rano dziennik nosił barwy Bizneswoman w trampkach. Przed południem przebrał się we własną markę.",
     "title": "Dziennik przed i po"
    }
+  },
+  "2026-11-02": {
+   "date": "2026-11-02",
+   "dayNo": 3,
+   "title": "Ja jem pierogi, stories robią się same",
+   "lead": "rakietaOS przejmuje całą comiesięczną komunikację Rakiety Biznesu i Klubu RB, razem z formularzami. Po południu pisze i składa stories BWT, a ja w tym czasie jem obiad.",
+   "story": [
+    {
+     "text": "Oddaję rakietaOS całą comiesięczną komunikację Rakiety Biznesu i Klubu RB. Powstaje skill i 4 zaplanowane zadania. Pierwsze wiadomości, grafiki i wydarzenie idą na WhatsApp z mojego komputera.",
+     "time": "09:05"
+    },
+    {
+     "text": "rakietaOS aktualizuje daty w formularzach Content Review i Q&A Klubu. Ja raz loguję się do Google. To też trafia do comiesięcznego automatu.",
+     "time": "10:31"
+    },
+    {
+     "text": "rakietaOS pisze storytelling na stories BWT: od montażu rolek do automatyzacji w ManyChacie i przejścia na @rakietaos. Przy tekstach siedzę przy czacie.",
+     "time": "15:00"
+    },
+    {
+     "text": "Potem składa 5 grafik i przyspieszone ×10 nagranie ekranu. Ja idę na obiad.",
+     "time": "15:00"
+    },
+    {
+     "text": "Poprawki: napisy na wideo ZADRA idą na dół i zostają do końca, kafelek RUCH dostaje nowy tekst. Ja kończę pierogi.",
+     "time": "15:18"
+    }
+   ],
+   "idea": {
+    "format": "rolka",
+    "hook": "Moje stories powstały, kiedy jadłam pierogi.",
+    "script": [
+     "Kadr: talerz pierogów. Napis: „Ile pracy włożyłam w dzisiejsze stories?”",
+     "Odpowiedź: 9 minut. Kiedyś zajmowało mi to ponad godzinę.",
+     "Przyspieszone nagranie ekranu: rakietaOS pisze tekst i składa 5 grafik.",
+     "Gotowe stories na telefonie, poprawki w minutę.",
+     "CTA: „Chcesz zobaczyć, jak to działa? Obserwuj @rakietaos.”"
+    ]
+   }
   }
  },
  "entries": [
@@ -314,6 +353,30 @@
    "meanwhile": "",
    "note": "Szacunek. Moja praca: jednorazowe logowanie do Google w przeglądarce Claude. Bazowo: ok. 5 min na formularz.",
    "id": "2026-11-02-1031-formularze"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "15:00",
+   "what": "Napisał storytelling na stories BWT (Claude: od montażu rolek do automatyzacji w ManyChacie, przejście na @rakietaos) i złożył go graficznie: 5 grafik plus przyspieszone ×10 nagranie ekranu.",
+   "project": "CONTENT · Story",
+   "meMin": 8,
+   "osMin": 15,
+   "baseMin": 60,
+   "meanwhile": "Przy pisaniu tekstów cały czas byłam przy czacie, a w czasie robienia grafik poszłam zjeść obiad.",
+   "note": "Czas bazowy według Moniki: pisanie ok. 30 min, grafika 30–60 min, razem min. godzina na porządne 5-kafelkowe stories.",
+   "id": "2026-11-02-1500-stories-claude-manychat"
+  },
+  {
+   "date": "2026-11-02",
+   "time": "15:18",
+   "what": "Poprawki w stories BWT: napisy na wideo ZADRA przeniesione na dół i zostają do końca, nowy tekst na kafelku RUCH.",
+   "project": "CONTENT · Story",
+   "meMin": 1,
+   "osMin": 3,
+   "baseMin": 10,
+   "meanwhile": "Kończyłam obiad – pierogi!",
+   "note": "",
+   "id": "2026-11-02-1518-poprawki-stories"
   }
  ]
 }
