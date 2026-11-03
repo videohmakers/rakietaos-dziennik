@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T20:08:45+00:00",
+ "updated": "2026-11-03T20:09:21+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -201,6 +201,41 @@
      "CTA: „Chcesz zobaczyć, jak to działa? Obserwuj @rakietaos.”"
     ]
    }
+  },
+  "2026-11-03": {
+   "date": "2026-11-03",
+   "dayNo": 4,
+   "title": "5 minut mojej pracy, 40 minut montażu",
+   "lead": "Dziś rakietaOS montuje rolkę „Paradoks eksperta”. Ja daję 5 minut, a w tym czasie piję zimową herbatkę z Krzysiem.",
+   "story": [
+    {
+     "text": "Zlecam rakietaOS montaż rolki „Paradoks eksperta”: okładka „Mitu przedsiębiorczości” i pułapka nad głową.",
+     "time": "12:36"
+    },
+    {
+     "text": "Styl BWT, spokojny. Dźwięk notatek: klawiatura.",
+     "time": "12:36"
+    },
+    {
+     "text": "rakietaOS montuje 40 minut. Ja w tym czasie piję zimową herbatkę z Krzysiem, który wrócił z siłki.",
+     "time": "12:36"
+    },
+    {
+     "text": "Wersja 1 gotowa: 66,7 sekundy. Kiedyś ten montaż zajmował mi 30 minut, dziś 5.",
+     "time": "12:36"
+    }
+   ],
+   "idea": {
+    "format": "rolka",
+    "hook": "Moja rolka montuje się sama, a ja piję herbatę z Krzysiem.",
+    "script": [
+     "Kadr z herbatą w dłoni i napis: 5 minut mojej pracy.",
+     "Ekran: rakietaOS montuje „Paradoks eksperta”, 40 minut pracy w tle.",
+     "Porównanie: kiedyś 30 minut ręcznie, dziś 5.",
+     "Fragment gotowej rolki, wersja 1, 66,7 s.",
+     "CTA: napisz „rakieta”, pokażę, jak to ustawiłam."
+    ]
+   }
   }
  },
  "entries": [
@@ -377,6 +412,18 @@
    "meanwhile": "Kończyłam obiad – pierogi!",
    "note": "",
    "id": "2026-11-02-1518-poprawki-stories"
+  },
+  {
+   "date": "2026-11-03",
+   "time": "12:36",
+   "what": "Montaż rolki „Paradoks eksperta” z okładką „Mitu przedsiębiorczości” i pułapką nad głową.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 5,
+   "osMin": 40,
+   "baseMin": 30,
+   "meanwhile": "piłam zimową herbatkę z Krzysiem, który akurat wrócił z siłki :)",
+   "note": "BWT, styl spokojny, dźwięk notatek: klawiatura; v1 66,7 s",
+   "id": "2026-11-03-1236-rolka-paradoks-eksperta"
   }
  ]
 }
