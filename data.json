@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T20:09:21+00:00",
+ "updated": "2026-11-04T20:08:09+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -236,6 +236,41 @@
      "CTA: napisz „rakieta”, pokażę, jak to ustawiłam."
     ]
    }
+  },
+  "2026-11-04": {
+   "date": "2026-11-04",
+   "dayNo": 5,
+   "title": "Rolka w 5 minut mojej pracy",
+   "lead": "Dziś rakietaOS montuje rolkę „6 faz skalowania biznesu eksperckiego”. Ręcznie siedziałabym nad tym pół godziny, teraz daję 5 minut.",
+   "story": [
+    {
+     "text": "Startuje montaż rolki „6 faz skalowania biznesu eksperckiego”. Animowana lista faz, plansze, notatki i CTA.",
+     "time": "17:18"
+    },
+    {
+     "text": "Do narzędzi montażowych dochodzi lista faz 1–6. Tylko na tę rolkę.",
+     "time": ""
+    },
+    {
+     "text": "rakietaOS pracuje 20 minut. Ja w tym czasie bawię się z Bekonem i Phoebe.",
+     "time": ""
+    },
+    {
+     "text": "Gotowe: skalowanie-final_v1.mp4, 1:27. Moja praca to 5 minut zamiast 30.",
+     "time": ""
+    }
+   ],
+   "idea": {
+    "format": "Karuzela",
+    "hook": "Rolka 1:27 z animowaną listą 6 faz. Moja praca: 5 minut zamiast 30.",
+    "script": [
+     "Slajd 1: okładka z hookiem i kadrem z gotowej rolki.",
+     "Slajd 2: co jest w środku – animowana lista 6 faz, plansze, notatki, CTA. Długość 1:27.",
+     "Slajd 3: decyzja – lista faz 1–6 dodana do narzędzi montażowych tylko na tę rolkę, nie na stałe.",
+     "Slajd 4: liczby – ręcznie 30 minut, teraz 5 minut mojej pracy i 20 minut rakietaOS.",
+     "Slajd 5: CTA – zobacz rolkę o 6 fazach skalowania na moim profilu i zapisz tę karuzelę."
+    ]
+   }
   }
  },
  "entries": [
@@ -424,6 +459,18 @@
    "meanwhile": "piłam zimową herbatkę z Krzysiem, który akurat wrócił z siłki :)",
    "note": "BWT, styl spokojny, dźwięk notatek: klawiatura; v1 66,7 s",
    "id": "2026-11-03-1236-rolka-paradoks-eksperta"
+  },
+  {
+   "date": "2026-11-04",
+   "time": "17:18",
+   "what": "Montaż rolki „6 faz skalowania biznesu eksperckiego” z animowaną listą faz, planszami, notatkami i CTA.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 5,
+   "osMin": 20,
+   "baseMin": 30,
+   "meanwhile": "Bawiłam się z moimi pieskami, Bekonem i Phoebe, i drapałam Bekona po dupce.",
+   "note": "Lista faz 1–6 dodana do narzędzi tylko na tę rolkę; skalowanie-final_v1.mp4, 1:27.",
+   "id": "2026-11-04-1718-rolka-6-faz-skalowania"
   }
  ]
 }
