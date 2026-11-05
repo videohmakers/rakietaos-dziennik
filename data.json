@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T20:08:09+00:00",
+ "updated": "2026-11-05T20:07:46+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -271,6 +271,49 @@
      "Slajd 5: CTA – zobacz rolkę o 6 fazach skalowania na moim profilu i zapisz tę karuzelę."
     ]
    }
+  },
+  "2026-11-05": {
+   "date": "2026-11-05",
+   "dayNo": 6,
+   "title": "Trzy okładki w 15 sekund mojej pracy",
+   "lead": "Dziś rakietaOS montuje rolkę pod trend „Co Ty właściwie robisz jako mentorka biznesowa?” i robi okładki do trzech rolek. Zlecam je równolegle w trzech oknach, każda to jedno zdanie.",
+   "story": [
+    {
+     "text": "rakietaOS montuje rolkę pod trend muzyczny o mentorce: hook, 6 tekstów, cięcia pod bity. Potem poprawka v2 z zamianą ujęć. Moja praca: 10 minut.",
+     "time": "17:20"
+    },
+    {
+     "text": "W tym czasie wysyłam pliki do księgowej.",
+     "time": ""
+    },
+    {
+     "text": "Zlecam okładkę do rolki o mentorce. Dostaję dwie wersje, wybieram tę ze wspólnym zdjęciem.",
+     "time": "19:35"
+    },
+    {
+     "text": "Zlecam jeszcze dwie okładki w osobnych oknach: „6 faz skalowania biznesu eksperckiego” i „Paradoks eksperta”.",
+     "time": "19:38"
+    },
+    {
+     "text": "Każde zlecenie to ok. 5 sekund i jedno zdanie: „zrób mi okładkę”. Idę do sklepu.",
+     "time": ""
+    },
+    {
+     "text": "Wracam, okładki są gotowe. Ręcznie to byłoby 45 minut, u mnie ok. 15 sekund.",
+     "time": ""
+    }
+   ],
+   "idea": {
+    "format": "Karuzela",
+    "hook": "3 okładki zlecone w 3 oknach naraz. 15 sekund mojej pracy zamiast 45 minut.",
+    "script": [
+     "Slajd 1: okładka – hook i trzy gotowe okładki obok siebie.",
+     "Slajd 2: zlecenie – jedno zdanie „zrób mi okładkę”, wysłane równolegle w trzech oknach, ok. 5 sekund na każde.",
+     "Slajd 3: decyzja – dwie wersje okładki do rolki o mentorce. Wybieram tę ze wspólnym zdjęciem, drugą odrzucam.",
+     "Slajd 4: liczby – ręcznie 15 minut na okładkę, razem 45. Teraz ok. 15 sekund mojej pracy i 28 minut rakietaOS.",
+     "Slajd 5: CTA – zobacz rolki z tymi okładkami na moim profilu i zapisz tę karuzelę."
+    ]
+   }
   }
  },
  "entries": [
@@ -471,6 +514,53 @@
    "meanwhile": "Bawiłam się z moimi pieskami, Bekonem i Phoebe, i drapałam Bekona po dupce.",
    "note": "Lista faz 1–6 dodana do narzędzi tylko na tę rolkę; skalowanie-final_v1.mp4, 1:27.",
    "id": "2026-11-04-1718-rolka-6-faz-skalowania"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "17:20",
+   "what": "Zmontowałam rolkę pod trend muzyczny „Co Ty właściwie robisz jako mentorka biznesowa?” (hook + 6 tekstów, cięcia pod bity) i poprawkę v2 z zamianą ujęć.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 10,
+   "osMin": 25,
+   "meanwhile": "wysyłałam pliki do księgowej",
+   "note": "Czasu bazowego dla rolki trendowej nie podałaś, więc baseMin zostaje puste do uzupełnienia.",
+   "id": "2026-11-05-1720-rolka-trend-mentorka"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "19:35",
+   "what": "Zrobiłam dwie okładki do rolki trendowej o mentorce; Monika wybrała wersję ze wspólnym zdjęciem.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 0,
+   "osMin": 10,
+   "baseMin": 15,
+   "meanwhile": "zleciłam jeszcze dwie okładki w innych oknach i poszłam do sklepu",
+   "note": "Zlecenie zajęło mi ok. 5 sekund.",
+   "id": "2026-11-05-1935-okladka-rolka-mentorka"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "19:38",
+   "what": "Okładka do rolki „6 faz skalowania biznesu eksperckiego” (kadr z liczeniem na palcach, pigułka 6 FAZ, biały tytuł).",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 0.08,
+   "osMin": 10,
+   "baseMin": 15,
+   "meanwhile": "Poszłam do sklepu. Zleciłam pod rząd 3 okładki w trzech czatach (razem ok. 15 sekund mojej pracy), a jak wróciłam, okładki były gotowe.",
+   "note": "Moja praca: 5 sekund, jedno zdanie „zrób mi okładkę”. skalowanie-okladka.png, 1080×1920.",
+   "id": "2026-11-05-1938-okladka-6-faz-skalowania"
+  },
+  {
+   "date": "2026-11-05",
+   "time": "19:38",
+   "what": "Okładka do rolki „Paradoks eksperta”: kadr z nagrania i tytuł w stylu BWT.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 0,
+   "osMin": 8,
+   "baseMin": 15,
+   "meanwhile": "poszłam do sklepu, wracam, a okładki są",
+   "note": "Moja praca: ok. 5 sekund (jedno zdanie: „zrób mi okładkę”). Zlecone równolegle w 3 oknach.",
+   "id": "2026-11-05-1938-okladka-paradoks-eksperta"
   }
  ]
 }
