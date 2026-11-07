@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T21:09:29+00:00",
+ "updated": "2026-11-07T21:55:06+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -319,7 +319,7 @@
    "date": "2026-11-07",
    "dayNo": 8,
    "title": "Nowa strona Klubu RB. Te same teksty, inny świat.",
-   "lead": "Dziś rakietaOS robi nową odsłonę strony Klubu Rakiety Biznesu w stylu BWT. Teksty i kolejność sekcji zostają, zmienia się tylko wygląd: 30 minut mojej pracy zamiast ostrożnie liczonych 8 godzin.",
+   "lead": "Dziś rakietaOS robi nową odsłonę strony Klubu Rakiety Biznesu w stylu BWT: te same teksty, nowy wygląd, 30 minut mojej pracy zamiast ostrożnie liczonych 8 godzin. Z tej strony od razu powstaje system marki Bizneswoman w trampkach.",
    "story": [
     {
      "text": "Zaczynamy od makiety przed i po. Te same teksty, ta sama kolejność sekcji, nowy wygląd w stylu Bizneswoman w trampkach.",
@@ -348,6 +348,10 @@
     {
      "text": "Moja praca: 30 minut. rakietaOS: 55 minut. Ręcznie zajęłoby mi to kilka dni.",
      "time": ""
+    },
+    {
+     "text": "Z gotowej strony powstaje system marki Bizneswoman w trampkach: paleta, typografia, 8 elementów z podglądem i opis marki. Moje 3 minuty, 15 minut rakietaOS.",
+     "time": "22:15"
     }
    ],
    "turbulence": {
@@ -634,6 +638,18 @@
    "meanwhile": "Oglądałam transmisję MMA na Canal+.",
    "note": "Te same teksty i ta sama kolejność sekcji, zmieniony tylko wygląd. Ręcznie zajęłoby mi to kilka dni; liczę ostrożnie 8 godzin. https://klub-rb.monikabochynska.pl/",
    "id": "2026-11-07-2055-klub-rb-odswiezenie"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "22:15",
+   "what": "System marki Bizneswoman w trampkach (Design System) zbudowany ze strony Klubu RB: paleta, typografia, 8 elementów z podglądem i opis marki.",
+   "project": "LANDINGI",
+   "meMin": 3,
+   "osMin": 15,
+   "baseMin": 180,
+   "meanwhile": "Dalej oglądałam MMA na Canal+.",
+   "note": "Paleta bazowa BWT: #E6367B, #D87AD4, #FEA116, #454355, #FFFFFF plus odcienie dopełniające (pink-deep, noc, jasne tła).",
+   "id": "2026-11-07-2215-design-system-bwt"
   }
  ]
 }
