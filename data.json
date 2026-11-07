@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T18:46:12+00:00",
+ "updated": "2026-11-07T21:08:20+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -314,6 +314,63 @@
      "Slajd 5: CTA – zobacz rolki z tymi okładkami na moim profilu i zapisz tę karuzelę."
     ]
    }
+  },
+  "2026-11-07": {
+   "date": "2026-11-07",
+   "dayNo": 8,
+   "title": "Nowa strona Klubu RB. Te same teksty, inny świat.",
+   "lead": "Dziś rakietaOS robi nową odsłonę strony Klubu Rakiety Biznesu w stylu BWT. Teksty i kolejność sekcji zostają, zmienia się tylko wygląd: 30 minut mojej pracy zamiast ostrożnie liczonych 8 godzin.",
+   "story": [
+    {
+     "text": "Zaczynamy od makiety przed i po. Te same teksty, ta sama kolejność sekcji, nowy wygląd w stylu Bizneswoman w trampkach.",
+     "time": "20:55"
+    },
+    {
+     "text": "rakietaOS robi interaktywną drogę rakiety przez 5 etapów i nową grafikę Biblioteki.",
+     "time": ""
+    },
+    {
+     "text": "Na stronę wchodzi 5 opinii wideo.",
+     "time": ""
+    },
+    {
+     "text": "Dostaję gotowy plik ZIP do Easytools. Potem poprawki guzików i FAQ.",
+     "time": ""
+    },
+    {
+     "text": "Strona mruga. rakietaOS diagnozuje problem i piszemy zgłoszenie do supportu Easytools.",
+     "time": ""
+    },
+    {
+     "text": "Moja praca: 30 minut. rakietaOS: 55 minut. Ręcznie zajęłoby mi to kilka dni.",
+     "time": ""
+    }
+   ],
+   "turbulence": {
+    "text": "Po wgraniu do Easytools strona mruga. rakietaOS diagnozuje, skąd to się bierze, i od razu przygotowujemy zgłoszenie do supportu Easytools.",
+    "title": "Strona mruga"
+   },
+   "idea": {
+    "format": "Karuzela",
+    "hook": "Nowa strona Klubu w 30 minut mojej pracy. Ręcznie liczę ostrożnie 8 godzin.",
+    "script": [
+     "Slajd 1: okładka – hook i hero strony Klubu RB przed i po obok siebie.",
+     "Slajd 2: zasada – te same teksty, ta sama kolejność sekcji. Zmieniam tylko wygląd na styl BWT.",
+     "Slajd 3: co doszło – interaktywna droga rakiety przez 5 etapów, nowa grafika Biblioteki, 5 opinii wideo.",
+     "Slajd 4: liczby i turbulencja – 30 minut mojej pracy, 55 minut rakietaOS, plik ZIP do Easytools. Strona mrugała, więc diagnoza i zgłoszenie do supportu.",
+     "Slajd 5: CTA – zobacz nową stronę Klubu RB i zapisz tę karuzelę."
+    ]
+   },
+   "beforeAfter": {
+    "after": "etapy/klub-rb-po.jpg",
+    "afterAlt": "Hero nowej strony Klubu Rakiety Biznesu na ciemnym tle w stylu BWT",
+    "afterLabel": "Po",
+    "before": "etapy/klub-rb-przed.jpg",
+    "beforeAlt": "Hero starej strony Klubu Rakiety Biznesu na jasnym tle",
+    "beforeLabel": "Przed",
+    "text": "Pierwsza sekcja strony Klubu Rakiety Biznesu. Te same teksty, nowy wygląd w stylu Bizneswoman w trampkach.",
+    "title": "Klub RB przed i po"
+   }
   }
  },
  "entries": [
@@ -561,6 +618,18 @@
    "meanwhile": "poszłam do sklepu, wracam, a okładki są",
    "note": "Moja praca: ok. 5 sekund (jedno zdanie: „zrób mi okładkę”). Zlecone równolegle w 3 oknach.",
    "id": "2026-11-05-1938-okladka-paradoks-eksperta"
+  },
+  {
+   "date": "2026-11-07",
+   "time": "20:55",
+   "what": "Nowa odsłona strony Klubu Rakiety Biznesu w stylu BWT: makieta przed i po, interaktywna droga rakiety przez 5 etapów, nowa grafika Biblioteki, 5 opinii wideo, plik ZIP do Easytools, poprawki guzików i FAQ, diagnoza mrugania strony i zgłoszenie do supportu Easytools.",
+   "project": "LANDINGI · Klub RB",
+   "meMin": 30,
+   "osMin": 55,
+   "baseMin": 480,
+   "meanwhile": "",
+   "note": "Te same teksty i ta sama kolejność sekcji, zmieniony tylko wygląd. Ręcznie zajęłoby mi to kilka dni; liczę ostrożnie 8 godzin. https://klub-rb.monikabochynska.pl/",
+   "id": "2026-11-07-2055-klub-rb-odswiezenie"
   }
  ]
 }
