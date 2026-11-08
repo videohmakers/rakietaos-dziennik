@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T21:55:06+00:00",
+ "updated": "2026-11-08T20:08:48+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -379,6 +379,38 @@
     "text": "Pierwsza sekcja strony Klubu Rakiety Biznesu. Te same teksty, nowy wygląd w stylu Bizneswoman w trampkach.",
     "title": "Klub RB przed i po"
    }
+  },
+  "2026-11-08": {
+   "date": "2026-11-08",
+   "dayNo": 9,
+   "title": "Cały dzień perfekcjonizmu w godzinę",
+   "lead": "Dziś rakietaOS przeprojektowuje prezentację VSL: 36 slajdów w stylu Rakieta Biznesu Mastermind w godzinę mojej pracy zamiast całego dnia. Do tego makieta Klubu RB w nowym języku marki i karuzela o nowej stronie Klubu.",
+   "story": [
+    {
+     "text": "Strona Klubu RB w nowym języku marki „okładka + cienkie linie”. Dostaję dwie wersje makiety. Piję kawę.",
+     "time": "09:35"
+    },
+    {
+     "text": "rakietaOS aktualizuje system marki BWT: bez nawigacji, ramki wyróżnienia, 6 elementów w liniach, style Cormorantu prostego. Moje 10 minut, 25 minut rakietaOS.",
+     "time": "09:35"
+    },
+    {
+     "text": "Prezentacja VSL: 36 slajdów w stylu Rakieta Biznesu Mastermind i nowa treść. Kosmiczna Oferta, Mapa unikalnego konceptu, system 4Z, sprzedaż w DM.",
+     "time": "11:43"
+    },
+    {
+     "text": "rakietaOS wstawia zdjęcia i screeny Klientek, nazwiska rozmywa. Ja szykuję obiad.",
+     "time": "11:43"
+    },
+    {
+     "text": "Gotowe PNG i PDF. Moja praca: 60 minut. rakietaOS: 180 minut. Kiedyś zajęłoby mi to cały dzień.",
+     "time": "11:43"
+    },
+    {
+     "text": "Karuzela „Nowa strona Klubu w 30 minut” dla @rakietaos, wspólny post z BWT: 9 slajdów PNG i slajd wideo z drogą rakiety. Moje 8 minut zamiast godziny.",
+     "time": "16:52"
+    }
+   ]
   }
  },
  "entries": [
@@ -650,6 +682,42 @@
    "meanwhile": "Dalej oglądałam MMA na Canal+.",
    "note": "Paleta bazowa BWT: #E6367B, #D87AD4, #FEA116, #454355, #FFFFFF plus odcienie dopełniające (pink-deep, noc, jasne tła).",
    "id": "2026-11-07-2215-design-system-bwt"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "09:35",
+   "what": "Makieta strony Klubu RB w nowym języku marki „okładka + cienkie linie” (2 wersje) i aktualizacja systemu marki BWT: bez nawigacji, ramki wyróżnienia, 6 elementów w liniach, style Cormorantu prostego.",
+   "project": "LANDINGI",
+   "meMin": 10,
+   "osMin": 25,
+   "baseMin": 180,
+   "meanwhile": "Piłam kawę.",
+   "note": "Pierwsza wersja makiety powstała 7.11 w nocy, poprawki i system marki rano. Czas bazowy przyjęty ostrożnie: 3 h.",
+   "id": "2026-11-08-0935-klub-rb-okladka-linie"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "11:43",
+   "what": "Przeprojektował prezentację VSL (36 slajdów) w stylu Rakieta Biznesu Mastermind, zaktualizował treść i wstawił zdjęcia oraz screeny Klientek.",
+   "project": "PREZENTACJE",
+   "meMin": 60,
+   "osMin": 180,
+   "baseMin": 480,
+   "meanwhile": "Szykowałam obiad.",
+   "note": "Kosmiczna Oferta, Mapa unikalnego konceptu, system 4Z, sprzedaż w DM; nazwiska Klientek rozmyte; gotowe PNG i PDF. Czas bazowy: cały dzień (perfekcjonizm).",
+   "id": "2026-11-08-1143-prezentacja-vsl-mastermind"
+  },
+  {
+   "date": "2026-11-08",
+   "time": "16:52",
+   "what": "Karuzela „Nowa strona Klubu w 30 minut” dla @rakietaos (wspólny post z BWT): 9 slajdów PNG i slajd wideo z interaktywną drogą rakiety, z poprawkami.",
+   "project": "CONTENT · Projektowanie karuzel",
+   "meMin": 8,
+   "osMin": 25,
+   "baseMin": 60,
+   "meanwhile": "",
+   "note": "Czas bazowy według Moniki: prosta karuzela ok. 30 min, rozbudowana (fancy) jak ta ok. 1 h.",
+   "id": "2026-11-08-1652-karuzela-klub-rb"
   }
  ]
 }
