@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T20:08:17+00:00",
+ "updated": "2026-11-11T20:08:06+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -459,6 +459,30 @@
     "text": "Pierwsza wersja karuzeli wychodzi w złym stylu: zmienne tła, numerki. Poprawiamy ją według karuzeli THE 50K SHIFT i zapisujemy ten styl w systemie marki, żeby następnym razem trafić od razu.",
     "title": "Zły styl w pierwszej wersji"
    }
+  },
+  "2026-11-11": {
+   "date": "2026-11-11",
+   "dayNo": 12,
+   "title": "Każda karuzela inna, styl ten sam",
+   "lead": "rakietaOS montuje nowy typ rolki: dialog „presja vs wolność w sprzedaży”, i dopisuje go do skilla. Po południu powstaje skill do projektowania karuzel BWT w stylu THE 50K SHIFT.",
+   "story": [
+    {
+     "text": "rakietaOS montuje rolkę-dialog „presja vs wolność w sprzedaży”. Bez hooka, bez plansz, bez zbliżeń. Etykiety nad głowami przełączają się według tego, kto mówi.",
+     "time": "11:34"
+    },
+    {
+     "text": "Ten typ rolki trafia do skilla i narzędzi montażu. Mnie to zajmuje 5 minut, kiedyś 30. W tym czasie maluję się do nagrania kolejnej rolki.",
+     "time": "11:34"
+    },
+    {
+     "text": "rakietaOS tworzy skill bwt-projektowanie-karuzel: ustalony styl karuzel BWT według THE 50K SHIFT, szablon wszystkich typów kafelków i automatyczny eksport PNG 1080×1350.",
+     "time": "15:44"
+    },
+    {
+     "text": "Mnie to zajmuje 5 minut. Ręcznie zrobiłabym najwyżej jeden szablon i każda karuzela wyglądałaby tak samo. Teraz każda jest inna, a styl zostaje ten sam.",
+     "time": "15:44"
+    }
+   ]
   }
  },
  "entries": [
@@ -801,6 +825,29 @@
    "meanwhile": "rozmawiałam z Play w sprawie zgłoszenia i braku internetu",
    "note": "Czas bazowy niepodany – do uzupełnienia. Kolejny krok: pełna strona, formularz zgłoszeń, publikacja na mastermind-rb.monikabochynska.pl (GitHub + home.pl).",
    "id": "2026-11-10-1644-podglad-landingu-mastermind"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "11:34",
+   "what": "Zmontowałam rolkę-dialog „presja vs wolność w sprzedaży” z etykietami nad głowami przełączanymi według tego, kto mówi, i dodałam ten typ rolki do skilla oraz narzędzi.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 5,
+   "osMin": 27,
+   "baseMin": 30,
+   "meanwhile": "malowałam się do nagrania kolejnej rolki",
+   "note": "Nowy typ rolki DIALOG: bez hooka, bez plansz i zbliżeń; inspiracja: mindset-final_v2.",
+   "id": "2026-11-11-1134-rolka-dialog-presja-wolnosc"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "15:44",
+   "what": "Stworzył skill bwt-projektowanie-karuzel: ustalony styl karuzel BWT (wzór THE 50K SHIFT), szablon wszystkich typów kafelków i automatyczny eksport PNG 1080×1350.",
+   "project": "CONTENT · Projektowanie karuzel",
+   "meMin": 5,
+   "osMin": 15,
+   "meanwhile": "",
+   "note": "Czas bazowy niepoliczalny: ręcznie dałoby się zrobić najwyżej jeden szablon, przez co każda karuzela wyglądałaby tak samo. Skill sprawia, że każda karuzela jest inna, a jednocześnie w tym samym stylu.",
+   "id": "2026-11-11-1544-skill-bwt-projektowanie-karuzel"
   }
  ]
 }
