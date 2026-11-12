@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T20:08:06+00:00",
+ "updated": "2026-11-12T20:07:54+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -848,6 +848,18 @@
    "meanwhile": "",
    "note": "Czas bazowy niepoliczalny: ręcznie dałoby się zrobić najwyżej jeden szablon, przez co każda karuzela wyglądałaby tak samo. Skill sprawia, że każda karuzela jest inna, a jednocześnie w tym samym stylu.",
    "id": "2026-11-11-1544-skill-bwt-projektowanie-karuzel"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "18:39",
+   "what": "Zmontowałam rolkę split screen „Wymówki vs Działanie” (Easytools) z 2 nagrań i nagrania ekranu w 3 wersjach: bez kreski na środku (osoby zawsze widoczne w całości), EASY wielkimi literami, podbita szminka; nowe narzędzia dodałam do paczki i skilla.",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 15,
+   "osMin": 100,
+   "baseMin": 120,
+   "meanwhile": "grałam w Heroes of Might and Magic 3",
+   "note": "Czas bazowy: rolka split screen 2 h (zapisany na stałe).",
+   "id": "2026-11-11-1839-rolka-split-screen-easytools"
   }
  ]
 }
