@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T20:07:54+00:00",
+ "updated": "2026-11-13T20:08:32+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -483,6 +483,30 @@
      "time": "15:44"
     }
    ]
+  },
+  "2026-11-13": {
+   "date": "2026-11-13",
+   "dayNo": 14,
+   "title": "275 hooków. Sama bym tylu nie wymyśliła.",
+   "lead": "Buduję z rakietaOS pełną mapę contentu dla SOUL MATES: 11 person, 5 etapów świadomości, 275 hooków i 111 wezwań. Mnie to zajmuje 4 minuty, kiedyś byłyby to 4 godziny.",
+   "story": [
+    {
+     "text": "rakietaOS mapuje 11 person zakupowych SOUL MATES na podstawie strony sprzedażowej. Bez nakładania się, bez dziur.",
+     "time": "10:39"
+    },
+    {
+     "text": "Dla każdej persony powstaje mapa bolączek, pożądań, przekonań, myśli i emocji w 5 etapach świadomości.",
+     "time": "10:50"
+    },
+    {
+     "text": "275 hooków prostym językiem. Tylu sama bym nie wymyśliła.",
+     "time": "11:01"
+    },
+    {
+     "text": "111 wezwań „Jeśli…, to chcę cię w SOUL MATES”. Mapa kompletna.",
+     "time": "11:50"
+    }
+   ]
   }
  },
  "entries": [
@@ -860,6 +884,54 @@
    "meanwhile": "grałam w Heroes of Might and Magic 3",
    "note": "Czas bazowy: rolka split screen 2 h (zapisany na stałe).",
    "id": "2026-11-11-1839-rolka-split-screen-easytools"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "10:39",
+   "what": "Zmapowanie 11 person zakupowych (MECE) dla oferty SOUL MATES na podstawie strony sprzedażowej.",
+   "project": "CONTENT · Research, Content Lab",
+   "meMin": 1,
+   "osMin": 4,
+   "baseMin": 30,
+   "meanwhile": "Jadłam śniadanie, piłam sobie herbatę.",
+   "note": "Czas bazowy: 4 h na całą mapę (persony, etapy, hooki, wezwania), rozłożone na 4 wpisy (30/60/90/60 min).",
+   "id": "2026-11-13-1039-persony-soul-mates"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "10:50",
+   "what": "Mapa bolączek, pożądań, przekonań, myśli i emocji dla 11 person SOUL MATES w 5 etapach świadomości (dokument).",
+   "project": "CONTENT · Research, Content Lab",
+   "meMin": 1,
+   "osMin": 15,
+   "baseMin": 60,
+   "meanwhile": "Jadłam śniadanie, piłam sobie herbatę.",
+   "note": "Część 4-godzinnego czasu bazowego całej mapy.",
+   "id": "2026-11-13-1050-persony-etapy-swiadomosci"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "11:01",
+   "what": "275 hooków prostym językiem dla 11 person SOUL MATES w 5 etapach świadomości (dokument).",
+   "project": "CONTENT · Research, Content Lab",
+   "meMin": 1,
+   "osMin": 20,
+   "baseMin": 90,
+   "meanwhile": "Jadłam śniadanie, piłam sobie herbatę.",
+   "note": "Część 4-godzinnego czasu bazowego całej mapy. Monika: sama nie wymyśliłaby tylu hooków.",
+   "id": "2026-11-13-1101-275-hookow-soul-mates"
+  },
+  {
+   "date": "2026-11-13",
+   "time": "11:50",
+   "what": "111 wezwań „Jeśli…, to chcę cię w SOUL MATES” (MECE) dla 11 person (dokument).",
+   "project": "CONTENT · Research, Content Lab",
+   "meMin": 1,
+   "osMin": 15,
+   "baseMin": 60,
+   "meanwhile": "Jadłam śniadanie, piłam sobie herbatę.",
+   "note": "Część 4-godzinnego czasu bazowego całej mapy.",
+   "id": "2026-11-13-1150-111-wezwan-soul-mates"
   }
  ]
 }
