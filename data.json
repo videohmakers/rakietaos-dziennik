@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T20:08:32+00:00",
+ "updated": "2026-11-14T20:07:53+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -507,6 +507,30 @@
      "time": "11:50"
     }
    ]
+  },
+  "2026-11-14": {
+   "date": "2026-11-14",
+   "dayNo": 15,
+   "title": "Ubrałam się do sklepu, a rolka już była gotowa",
+   "lead": "Sobota w trybie content: kafelki Stories i odnowiona stara rolka. Ja 9 minut, rakietaOS 32, a 48 minut wraca do mnie.",
+   "story": [
+    {
+     "text": "rakietaOS oznacza na kafelku Stories skill i prompt w stylu BWT i dodaje tekst na dłoni. Ja 2 minuty, kiedyś 15. Idę na kawę.",
+     "time": "10:30"
+    },
+    {
+     "text": "Cztery kafelki Stories o rakietaOS na zdjęciach z kawiarni, z miejscem na ankietę. Ja 5 minut, kiedyś ok. 40. Jedna poprawka układu kafelka 4.",
+     "time": "10:45"
+    },
+    {
+     "text": "Montuję od nowa starą rolkę „2022 → 2026”: rakietaOS usuwa wypalone napisy, rozjaśnia obraz i daje nowe napisy fontami BWT. Ja 2 minuty, rakietaOS 11. Bez pliku projektu ręcznie by się nie dało. To nowa możliwość, nie oszczędność czasu.",
+     "time": "12:27"
+    }
+   ],
+   "turbulence": {
+    "text": "Układ czwartego kafelka Stories nie siadł za pierwszym razem. Jedna poprawka i gotowe.",
+    "title": "Kafelek 4 do poprawki"
+   }
   }
  },
  "entries": [
@@ -932,6 +956,41 @@
    "meanwhile": "Jadłam śniadanie, piłam sobie herbatę.",
    "note": "Część 4-godzinnego czasu bazowego całej mapy.",
    "id": "2026-11-13-1150-111-wezwan-soul-mates"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "10:30",
+   "what": "System oznaczył na kafelku Stories skill i prompt w stylu BWT i dodał tekst na dłoni.",
+   "project": "CONTENT · Story",
+   "meMin": 2,
+   "osMin": 6,
+   "baseMin": 15,
+   "meanwhile": "Poszłam na kawę.",
+   "note": "Czas bazowy 15 min to ładna wersja w Canvie; bezpośrednio na Instagramie zajęłoby ok. 5 min.",
+   "id": "2026-11-14-1030-kafelek-stories-skill-prompt"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "10:45",
+   "what": "Projekt 4 kafelków Stories (2–5) o rakietaOS na zdjęciach z kawiarni, z miejscem na ankietę",
+   "project": "CONTENT · Story",
+   "meMin": 5,
+   "osMin": 15,
+   "baseMin": 40,
+   "meanwhile": "poszłam na kawę, zająć się życiem (w tym czasie w innych okienkach montaż rolki i karuzeli)",
+   "note": "Teksty gotowe wcześniej. Baza: grafika do Stories 30–60 min za 5 kafelków, więc ok. 40 min za 4. Jedna poprawka układu kafelka 4.",
+   "id": "2026-11-14-1045-stories-rakietaos"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "12:27",
+   "what": "Montaż od nowa starej rolki „2022 → 2026”: usunięcie wypalonych napisów, rozjaśnienie obrazu, nowe napisy fontami BWT",
+   "project": "CONTENT · Montaż rolek",
+   "meMin": 2,
+   "osMin": 11,
+   "meanwhile": "miałam iść do sklepu, ale zdążyłam się tylko ubrać, a rolka już była gotowa",
+   "note": "Bez pliku projektu ręcznie niewykonalne; jedyna opcja to zasłanianie starych napisów tłem. Nowa możliwość, nie oszczędność czasu.",
+   "id": "2026-11-14-1227-rolka-2022-2026"
   }
  ]
 }
