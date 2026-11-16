@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T20:07:53+00:00",
+ "updated": "2026-11-16T20:08:01+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -531,6 +531,30 @@
     "text": "Układ czwartego kafelka Stories nie siadł za pierwszym razem. Jedna poprawka i gotowe.",
     "title": "Kafelek 4 do poprawki"
    }
+  },
+  "2026-11-16": {
+   "date": "2026-11-16",
+   "dayNo": 17,
+   "title": "Pięć miejsc, które same znikną po 30.11",
+   "lead": "Uruchamiam z rakietaOS akcję „Projekt Boże Narodzenie” na landingu Mastermindu: odliczanie, bonusy i miejsca, które same znikną po terminie. Ja 20 minut, rakietaOS 40, a to rzecz, której wcześniej sama bym nie zrobiła.",
+   "story": [
+    {
+     "text": "rakietaOS dokłada na landing Mastermindu różowy pasek z odliczaniem, ramkę z bonusami i pigułkę „5 miejsc”. Ja 20 minut, rakietaOS 40. Jem śniadanie.",
+     "time": "09:50"
+    },
+    {
+     "text": "Po 30.11 strona sama wraca do poprzedniej wersji. Licznik i automatyczny powrót były wcześniej poza moim zasięgiem. To nowa możliwość, nie oszczędność czasu.",
+     "time": "09:50"
+    },
+    {
+     "text": "W ofercie ląduje nowy Kick Off z Planem ROI i skille do Claude.",
+     "time": "09:50"
+    },
+    {
+     "text": "Przy okazji: szkic wiadomości o przerwie świątecznej dla obecnych klientek i zapis do regulaminu.",
+     "time": "09:50"
+    }
+   ]
   }
  },
  "entries": [
@@ -991,6 +1015,29 @@
    "meanwhile": "miałam iść do sklepu, ale zdążyłam się tylko ubrać, a rolka już była gotowa",
    "note": "Bez pliku projektu ręcznie niewykonalne; jedyna opcja to zasłanianie starych napisów tłem. Nowa możliwość, nie oszczędność czasu.",
    "id": "2026-11-14-1227-rolka-2022-2026"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "11:21",
+   "what": "Zbudowanie i publikacja kompletnego landingu Rakieta Biznesu Mastermind (mastermind-rb.monikabochynska.pl): sekcje wg inspiracji Social Bungalow, zdjęcia, filmy, formularz zgłoszeń, SEO.",
+   "project": "LANDINGI",
+   "meMin": 180,
+   "osMin": 300,
+   "baseMin": 2400,
+   "meanwhile": "praktycznie cały czas siedziałam z Tobą; w przerwach spacer z psami, herbata, zrobiłam i zjadłam obiad, obejrzałam odcinek serialu",
+   "note": "Sama nie byłabym w stanie zrobić takiej strony – musiałabym ją zlecić; oszczędność ok. 2500–3000 zł. Wcześniej tyle godzin, ile poszło dziś na całą stronę, poświęciłam sama na 2 pierwsze sekcje bez zadowalającego efektu (baseMin szacunkowy, ok. 40 h).",
+   "id": "2026-11-15-1121-landing-mastermind-rb"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "09:50",
+   "what": "Akcja listopadowa „Projekt Boże Narodzenie” na landingu Mastermindu: różowy pasek z odliczaniem, ramka z bonusami i pigułka 5 miejsc, które same znikną po 30.11, plus nowy Kick Off z Planem ROI i skille do Claude w ofercie",
+   "project": "LANDINGI",
+   "meMin": 20,
+   "osMin": 40,
+   "meanwhile": "jadłam śniadanie",
+   "note": "Nowa rzecz: licznik + automatyczny powrót do poprzedniej wersji po terminie, wcześniej poza moim zasięgiem. Przy okazji: szkic wiadomości o przerwie świątecznej dla obecnych klientek i zapis do regulaminu.",
+   "id": "2026-11-16-0950-akcja-listopadowa"
   }
  ]
 }
