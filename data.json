@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T20:08:01+00:00",
+ "updated": "2026-11-18T20:07:35+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -1038,6 +1038,18 @@
    "meanwhile": "jadłam śniadanie",
    "note": "Nowa rzecz: licznik + automatyczny powrót do poprzedniej wersji po terminie, wcześniej poza moim zasięgiem. Przy okazji: szkic wiadomości o przerwie świątecznej dla obecnych klientek i zapis do regulaminu.",
    "id": "2026-11-16-0950-akcja-listopadowa"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "19:48",
+   "what": "Karuzela BWT „WTF is… mastermind” (9 kafelków PNG 1080×1350) z dwiema rundami poprawek",
+   "project": "CONTENT · Projektowanie karuzel",
+   "meMin": 10,
+   "osMin": 15,
+   "baseMin": 60,
+   "meanwhile": "oglądałam serial",
+   "note": "Brief i zdjęcia + 2 poprawki (duże WTF is, akcenty). Bazowo rozbudowana karuzela 1 h.",
+   "id": "2026-11-17-1948-karuzela-wtf-mastermind"
   }
  ]
 }
