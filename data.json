@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T20:07:35+00:00",
+ "updated": "2026-11-25T11:42:04+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -532,6 +532,34 @@
     "title": "Kafelek 4 do poprawki"
    }
   },
+  "2026-11-15": {
+   "date": "2026-11-15",
+   "dayNo": 16,
+   "title": "Cała strona w jeden dzień. Sama zrobiłam dwie sekcje w 40 godzin",
+   "lead": "Buduję i publikuję z rakietaOS kompletny landing Rakieta Biznesu Mastermind. Ja 3 godziny, rakietaOS 5, a wcześniej 40 godzin dało mi tylko dwie pierwsze sekcje.",
+   "story": [
+    {
+     "text": "Siadam z rakietaOS do landingu Mastermindu (mastermind-rb.monikabochynska.pl). Sekcje układamy według inspiracji Social Bungalow.",
+     "time": "11:21"
+    },
+    {
+     "text": "Dochodzą zdjęcia, filmy, formularz zgłoszeń i SEO. Strona idzie na produkcję jeszcze tego dnia.",
+     "time": "11:21"
+    },
+    {
+     "text": "Ja 180 minut, rakietaOS 300. Kiedyś ok. 40 godzin poszło mi na same dwie sekcje, bez zadowalającego efektu.",
+     "time": "11:21"
+    },
+    {
+     "text": "Sama bym takiej strony nie zrobiła. Musiałabym ją zlecić, za ok. 2500–3000 zł.",
+     "time": "11:21"
+    },
+    {
+     "text": "W przerwach spacer z psami, herbata, obiad i odcinek serialu.",
+     "time": "11:21"
+    }
+   ]
+  },
   "2026-11-16": {
    "date": "2026-11-16",
    "dayNo": 17,
@@ -553,6 +581,26 @@
     {
      "text": "Przy okazji: szkic wiadomości o przerwie świątecznej dla obecnych klientek i zapis do regulaminu.",
      "time": "09:50"
+    }
+   ]
+  },
+  "2026-11-17": {
+   "date": "2026-11-17",
+   "dayNo": 18,
+   "title": "Dziewięć kafelków „WTF is… mastermind” w 10 minut",
+   "lead": "Robię z rakietaOS karuzelę BWT „WTF is… mastermind”: 9 kafelków 1080×1350. Ja 10 minut, rakietaOS 15, a kiedyś taka karuzela zajmowała mi godzinę.",
+   "story": [
+    {
+     "text": "Daję rakietaOS brief i zdjęcia. Powstaje karuzela BWT „WTF is… mastermind”, 9 kafelków PNG 1080×1350.",
+     "time": "19:48"
+    },
+    {
+     "text": "Dwie rundy poprawek: większe „WTF is” i mocniejsze akcenty.",
+     "time": "19:48"
+    },
+    {
+     "text": "Ja 10 minut, rakietaOS 15. Kiedyś rozbudowana karuzela to była godzina. 50 minut wraca do mnie.",
+     "time": "19:48"
     }
    ]
   }
