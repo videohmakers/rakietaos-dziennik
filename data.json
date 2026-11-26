@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T11:42:04+00:00",
+ "updated": "2026-11-26T20:08:49+00:00",
  "days": {
   "2026-10-31": {
    "date": "2026-10-31",
@@ -603,6 +603,34 @@
      "time": "19:48"
     }
    ]
+  },
+  "2026-11-26": {
+   "date": "2026-11-26",
+   "dayNo": 27,
+   "title": "Rozmyte screeny i trzy kafelki, a biurko posprzątane",
+   "lead": "Robię z rakietaOS stories: obrobione screeny z WhatsAppa i 3 kafelki Rakieta Biznesu Mastermind. Ja 16 minut, rakietaOS 32, a same kafelki kiedyś zajmowały mi godzinę.",
+   "story": [
+    {
+     "text": "Daję rakietaOS screeny z WhatsAppa: wiadomość Ady i rozmowę na grupie Mastermind RB. Wraca miękkie rozmycie numerów, zdjęć i nazw programów, różowe podkreślenia i rozmowa sklejona w jeden obrazek na stories.",
+     "time": "17:09"
+    },
+    {
+     "text": "Cztery poprawki: piątka, mocniejsze rozmycie zdjęcia, głosówka zamieniona na wiadomość Ady. Ja 6 minut, rakietaOS 12. Ręcznie w Canvie rozmycie nigdy nie wychodziło mi ładnie.",
+     "time": "17:09"
+    },
+    {
+     "text": "Brief, logo i zdjęcie. Powstają 3 kafelki stories 1080×1920: „Co otrzymasz” z bonusem do 30.11, „Wskakuj na pokład” ze zdjęciem i CTA „LISTOPAD” z konfetti.",
+     "time": "17:45"
+    },
+    {
+     "text": "Poprawiam kolory bez pomarańczu, oryginalne logo, treść pigułek i mentoring zamiast masterminda. Ja 10 minut, rakietaOS 20. Kiedyś godzina z szukaniem szablonu. 50 minut wraca do mnie.",
+     "time": "17:45"
+    },
+    {
+     "text": "W tym czasie sprzątam biurko.",
+     "time": "17:45"
+    }
+   ]
   }
  },
  "entries": [
@@ -1098,6 +1126,29 @@
    "meanwhile": "oglądałam serial",
    "note": "Brief i zdjęcia + 2 poprawki (duże WTF is, akcenty). Bazowo rozbudowana karuzela 1 h.",
    "id": "2026-11-17-1948-karuzela-wtf-mastermind"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "17:09",
+   "what": "Obróbka screenów z WhatsAppa (wiadomość Ady i rozmowa na grupie Mastermind RB): miękkie rozmycie numerów, zdjęć i nazw programów, różowe podkreślenia i sklejenie rozmowy w jeden obrazek na stories",
+   "project": "CONTENT · Projektowanie karuzel",
+   "meMin": 6,
+   "osMin": 12,
+   "meanwhile": "posprzątałam biurko",
+   "note": "Screeny, przykład i 4 poprawki (piątka, mocniejsze rozmycie zdjęcia, głosówka → wiadomość Ady). Nowa rzecz: ręcznie w Canvie rozmycie nie wychodziło ładnie, więc brak czasu bazowego.",
+   "id": "2026-11-26-1709-screeny-ada-blur"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "17:45",
+   "what": "3 kafelki stories Rakieta Biznesu Mastermind (1080×1920): „Co otrzymasz” z bonusem do 30.11, „Wskakuj na pokład” ze zdjęciem i CTA „LISTOPAD” z konfetti",
+   "project": "CONTENT · Projektowanie karuzel",
+   "meMin": 10,
+   "osMin": 20,
+   "baseMin": 60,
+   "meanwhile": "posprzątałam biurko",
+   "note": "Brief, logo, zdjęcie + poprawki (kolory bez pomarańczu, oryginalne logo, treść pigułek, mentoring zamiast masterminda). Bazowo 1 h ręcznie za 3 kafelki, łącznie ze znalezieniem albo zrobieniem szablonu.",
+   "id": "2026-11-26-1745-kafelki-stories-mastermind"
   }
  ]
 }
